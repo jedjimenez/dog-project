@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project.Pages;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,13 @@ namespace project
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var tabbedPage = new TabbedPage();
+            tabbedPage.Children.Add(new Page1()); //creates a child page for tab
+            tabbedPage.Children.Add(new Page2()); //creates a child page for tab
+            tabbedPage.Children.Add(new Page3()); //creates a child page for tab
+            tabbedPage.Children.Add(new Page4()); //creates the fourth page
+            MainPage = new TabbedPage(); //my main page will be the tabbed page that will have the children attached to it
+            MainPage = tabbedPage; //makes the main page the where the tabbs will be shown
         }
 
         protected override void OnStart()
