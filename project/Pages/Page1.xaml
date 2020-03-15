@@ -4,14 +4,26 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="project.Pages.Page1">
+             x:Class="project.Pages.Page1"
+             >
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hello"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Image Source="{Binding image}"/>
+                                <Label Text="{Binding text}"/>
+                                <Label Text="{Binding smallprint}"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
