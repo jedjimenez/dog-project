@@ -5,9 +5,43 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="project.MainPage"
+             BackgroundImageSource="dog.jpg"
              >
 
     <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label
+                Text="Canidae"
+                Grid.Row="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Center"
+                FontSize="50"
+                TextColor="Black"
+                />
+            <Button
+                Text="Dog Breeds"
+                Grid.Row="4"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked"
+            />
+        </Grid>
 
     </StackLayout>
 

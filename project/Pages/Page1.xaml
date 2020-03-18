@@ -5,19 +5,37 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="project.Pages.Page1"
+             IconImageSource="paw.png"
+             Title="Dogs"
              >
-    
     <ContentPage.Content>
         <StackLayout>
-            <ListView>
+            <ListView x:Name="list" SeparatorColor="White" BackgroundColor="Black" RowHeight="70" ItemSelected="list_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            <ViewCell.ContextActions>
+                                
+                            </ViewCell.ContextActions>
                         <ViewCell.View>
-                            <StackLayout>
-                                <Image Source="{Binding image}"/>
-                                <Label Text="{Binding text}"/>
-                                <Label Text="{Binding smallprint}"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Image 
+                                    Source="{Binding image}"
+                                    MinimumHeightRequest="30"
+                                    HorizontalOptions="StartAndExpand"
+                                />
+                                <Label 
+                                    Text="{Binding text}"
+                                    TextColor="Goldenrod"
+                                    HorizontalOptions="StartAndExpand"  
+                                    FontSize="Large"
+                                />
+                                <Label 
+                                    Text="{Binding smallprint}"
+                                    TextColor="NavajoWhite"
+                                    HorizontalOptions="EndAndExpand" 
+                                    FontSize="10"
+                                />
                             </StackLayout>
                         </ViewCell.View>
                         </ViewCell>

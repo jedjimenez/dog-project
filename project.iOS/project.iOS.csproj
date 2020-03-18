@@ -135,4 +135,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\dog.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\paw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ABDpuppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AusSheppuppy.jpeg" />
+  </ItemGroup>
 </Project>
