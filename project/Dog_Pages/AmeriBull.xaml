@@ -56,7 +56,7 @@
                         </Label.Text>
                     </Label>
                     <Label
-                        Text="Care"
+                        Text="Nutrition"
                         TextColor="DarkGoldenrod"
                         FontSize="45"
                         BackgroundColor="Black"

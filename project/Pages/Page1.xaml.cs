@@ -32,7 +32,7 @@ namespace project.Pages
             {
                 new information()
                 {
-                    text = "AmericanBull Dog", smallprint = "Strong and Muscular" ,image = "ambull.jpeg"
+                    text = "American BullDog", smallprint = "Strong and Muscular" ,image = "ambull.jpeg"
                 },
                 new information()
                 {
@@ -76,6 +76,7 @@ namespace project.Pages
 
         private async void list_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            
             if(e.SelectedItemIndex == 0)
             {
                 await Navigation.PushAsync(new AmeriBull());
@@ -83,6 +84,34 @@ namespace project.Pages
             else if(e.SelectedItemIndex == 1)
             {
                 await Navigation.PushAsync(new AusShep());
+            }
+            else if (e.SelectedItemIndex == 2)
+            {
+                await Navigation.PushAsync(new FrenchB());
+            }
+            else if (e.SelectedItemIndex == 3)
+            {
+                await Navigation.PushAsync(new GoldR());
+            }
+            else if (e.SelectedItemIndex == 4)
+            {
+                await Navigation.PushAsync(new Husky());
+            }
+            else if (e.SelectedItemIndex == 5)
+            {
+                await Navigation.PushAsync(new Kjindo());
+            }
+            else if (e.SelectedItemIndex == 6)
+            {
+                await Navigation.PushAsync(new Pitbull());
+            }
+            else if (e.SelectedItemIndex == 7)
+            {
+                await Navigation.PushAsync(new PomDog());
+            }
+            else if (e.SelectedItemIndex == 8)
+            {
+                await Navigation.PushAsync(new PugDog());
             }
         }
     }

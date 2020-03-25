@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.Husky"
+             Title="Siberian Husky"
+             BackgroundColor="White"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Siberian Husky"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                />
+            <Image
+                Source="sibhusky.jpg"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Gray"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="LightSkyBlue" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            21-23.5 inches (male), 20-22 inches (female)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Gray"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="LightSkyBlue" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            45-60 pounds (male), 35-50 pounds (female)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Gray"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="LightSkyBlue" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            12-14 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Gray"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="LightSkyBlue" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Feeding a high-quality dog food is essential for the Siberian’s healthy skin and coat. Adjustments in the level of protein in the food is required for the working Siberian, based on the level of activity. In the summer months, a lower protein level may be appropriate, around 20 percent, while a dog working in harness in wintertime may need 32 percent protein. Monitor each individual Siberian, and adjust the amount and type of food as required. Be careful not to overfeed. Monitor the weight of each dog, and be selective about supplements.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Gray"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="LightSkyBlue" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Siberian Huskies are considered a “natural” breed. They are remarkably self-cleaning and often need only a few baths a year, unless being shown in conformation dog shows. Weekly brushings help keep the coat and skin in good condition. Siberians have a double coat—an undercoat, and guard hair. The undercoat is shed twice a year, and it is important to continually “rake out” the old coat, using a pin brush and metal comb. Pay close attention to the length of the nails, and keep them trimmed to prevent any foot problems. Siberians competing in conformation require a bit more selective grooming for the best presentation.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Gray"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="LightSkyBlue" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Siberians are active, athletic dogs who need a lot of exercise. They are a working breed and happiest when they have a function to perform. Regular exercise is important both physically and mentally, and doing activities together strengthens the bond between dog and owner. Siberians were bred to run and will do so at every opportunity; it is vital to keep the dog on a leash, in harness, or in a fenced yard at all times. There are several AKC-sponsored activities that can be enjoyed by dog and owners—rally, agility, and obedience are a few. A busy and active Siberian is a happy and healthy Siberian. This breed is also very adaptable, and for those who live in a more urban setting, daily walks or doggie play groups can provide great exercise.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Gray"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="LightSkyBlue" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            All breeds benefit from early socialization, basic obedience training, and learning good manners, and the Siberian Husky is no exception. For those owners who want to work their dogs in harness, training for this requires hours of dedication and patience. There are several good books available on training for the trail that provide advice and information on getting started. The best approach is to make all training exercises fun for both dog and handler. Siberians are very social, and regularly need the company of their people or other dogs; they are not suited to being left alone all day. Most importantly, Siberians have an overwhelming desire to run, and they should be on leash or in a securely fenced-in area at all times and never allowed off lead.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Gray"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="LightSkyBlue" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Fortunately, the Siberian Husky is a relatively healthy breed. Responsible breeders screen their breeding stock for health problems such as juvenile cataracts, and the breed’s national parent club, the Siberian Husky Club of America, has strict guidelines to help reduce reported cases. Beginning at 12 months of age, all Siberians who potentially will be part of a breeding program should be examined by a canine ophthalmologist. The exam is then repeated on a yearly basis. New screenings and tests are constantly being developed to help breeders in their selection of a potential dam and sire. Knowledgeable breeding practices ensure the future health of the breed. Owners of working Siberians need to closely monitor each dog to be able to recognize when something just isn’t right. Having a veterinarian familiar with working dogs is an advantage.
+
+Recommended Health Tests from the National Breed Club:
+
+Hip Evaluation
+Ophthalmologist Evaluation
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
