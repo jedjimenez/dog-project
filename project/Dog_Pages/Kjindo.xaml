@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.Kjindo"
+             Title="Korean Jindo"
+             BackgroundColor="White"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Korean Jindo"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                />
+            <Image
+                Source="kpuppy.jpg"
+                MinimumHeightRequest="300"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="Moccasin"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="Lightpink" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            18-22 inches
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="Moccasin"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="Lightpink" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            30-50 pounds
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="Moccasin"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="Lightpink" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            ~14 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="Moccasin"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="Lightpink" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Jindo should do well on a high-quality dog food, whether commercially manufactured or home-prepared with your veterinarian’s supervision and approval. Any diet should be appropriate to the dog’s age (puppy, adult, or senior). Jindos are light eaters, and their lean appearance often prompts owners to worry about their diet. It is extremely easy to turn Jindos into picky eaters by leaving their food down for them to eat whenever they would like or by adding treats to their food to entice them to eat. Check with your vet if you have any concerns about your dog’s weight or diet. Clean, fresh water should be available at all times.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="Moccasin"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="Lightpink" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Jindo is a fastidious breed whose double coat requires weekly brushing with a slicker or pin brush. They are known for being extremely meticulous and clean. Their double coat repels dirt and water, and they do not normally produce an odor. Throughout most of the year, their coat requires little more than weekly brushing to keep shedding at a minimum and the occasional bath for them to look their best. As with all double-coated breeds, twice a year the Jindo “blows” its coat. During this time, the entire undercoat is shed over the course of a month or more, and both regular brushing of the dog and vacuuming of the home are required.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="Moccasin"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="Lightpink" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Jindo is a high-energy hunting and guard dog with impeccable house manners. They were developed as a serious hunting dog capable of traveling many miles and taking down small and large game. This very athletic breed requires a reasonable amount of physical and mental stimulation. Be it guarding acreage or performing tricks for the neighbors’ kids, Jindos love having a job to do and their needs are fairly easily met in an active household. They enjoy sports like lure coursing and agility, have run on sled dog teams, and are happy to turn their athleticism to any active task, even if that task is simply a nice long walk.
+Inside the home, Jindos are polite and attentive. They will often follow their owner from room to room, not being clingy but happy to curl up in a corner where they can simply be near and watch over their person or family. If given an active outlet, they seldom bother anything in the home that is not theirs, and they are not a destructive breed.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="Moccasin"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="Lightpink" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Jindo is a very serious hunting dog renowned for his loyalty to his owner and family. He is an extremely intelligent and independent dog with great problem-solving skills and the ability to think for himself. Jindos have a calm, confident, thoughtful nature, never fearful or aggressive without reason. Jindos are one-person dogs, very loyal to their owner and family and often reserved with strangers. The breed is keenly protective of their owner and property and is prized as an intelligent watch dog who does not react unless necessary. It is a breed characteristic for the Jindo to be extremely uncomfortable being forcibly restrained by a stranger. High prey drive is the norm for this extremely athletic hunting breed. The Jindo does not have much tolerance for rude behavior of other dogs and generally is not interested in interacting with strange dogs outside his home. Within the home, same-sex dog aggression is often the norm and opposite-sex pairs are highly recommended. Early socialization and puppy training classes are extremely important in order to expose the Jindo to the many things in his environment and give him the basic skills to become a good canine citizen. Jindos are extremely clean and are naturally housebroken at a very young age.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="Moccasin"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Black" TextColor="Lightpink" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Jindos are generally a healthy and long-lived breed with few known health issues. The lifespan for Jindos is often 14 years or more, and most live long, healthy lives. There are very few reported health issues within the breed. The most common health problems encountered are allergies and hypothyroidism. There have been a few isolated cases of cataracts and hip dysplasia within the breed. Systematic health testing has not been the norm until recently, so the true hip and eye status of the breed has yet to be fully explored.
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
