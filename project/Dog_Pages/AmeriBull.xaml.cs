@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace project.Dog_Pages
 {
+    
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AmeriBull : ContentPage
     {
@@ -16,5 +17,6 @@ namespace project.Dog_Pages
         {
             InitializeComponent();
         }
+ 
     }
 }

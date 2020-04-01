@@ -10,12 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace project.Dog_Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Husky : ContentPage
+    public partial class Germ : ContentPage
     {
-        public Husky()
+        public Germ()
         {
             InitializeComponent();
         }
-
+  
     }
 }

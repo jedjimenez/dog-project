@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace project.Dog_Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Husky : ContentPage
+    public partial class Border : ContentPage
     {
-        public Husky()
+        public Border()
         {
             InitializeComponent();
         }

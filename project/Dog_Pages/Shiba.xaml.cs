@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Android.Content.Res;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +11,11 @@ using Xamarin.Forms.Xaml;
 namespace project.Dog_Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Husky : ContentPage
+    public partial class Shiba : ContentPage
     {
-        public Husky()
+        public Shiba()
         {
             InitializeComponent();
         }
-
     }
 }

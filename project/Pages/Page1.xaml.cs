@@ -69,6 +69,46 @@ namespace project.Pages
                 new information()
                 {
                     text = "Shiba Inu", smallprint = "Hunter and companion", image = "shiba.jpg"
+                },
+                new information()
+                {
+                    text = "Bichon Frise", smallprint = "Playful and Curious", image = "bichon.jpg"
+                },
+                new information()
+                {
+                    text = "Border Collie", smallprint = "Smart and Agile", image = "border.jpg"
+                },
+                new information()
+                {
+                    text = "Chihuahua", smallprint = "Small and Fierce", image = "chihuahua.jpg"
+                },
+                new information()
+                {
+                    text = "ChowChow", smallprint = "Bright and Serious-Minded", image = "chowchow.jpg"
+                },
+                new information()
+                {
+                    text = "Corgi", smallprint = "Smart and Affectionate", image = "corgi.jpg"
+                },
+                new information()
+                {
+                    text = "Dachshund", smallprint = "Friendly and Curious", image = "dachshund.jpg"
+                },
+                new information()
+                {
+                    text = "German Shepherd", smallprint = "Smart and Friendly", image = "german.jpg"
+                },
+                new information()
+                {
+                    text = "Maltese", smallprint = "Small and Firendly", image = "maltese.jpg"
+                },
+                new information()
+                {
+                    text = "Samoyed", smallprint = "Gentle and Firendly", image = "samoyed.jpg"
+                },
+                new information()
+                {
+                    text = "Shih Tzu", smallprint = "Playful and Affectionate", image = "shihtzu.jpg"
                 }
             };
             list.ItemsSource = list1;
@@ -76,12 +116,12 @@ namespace project.Pages
 
         private async void list_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            
-            if(e.SelectedItemIndex == 0)
+
+            if (e.SelectedItemIndex == 0)
             {
                 await Navigation.PushAsync(new AmeriBull());
             }
-            else if(e.SelectedItemIndex == 1)
+            else if (e.SelectedItemIndex == 1)
             {
                 await Navigation.PushAsync(new AusShep());
             }
@@ -113,6 +153,55 @@ namespace project.Pages
             {
                 await Navigation.PushAsync(new PugDog());
             }
+            else if (e.SelectedItemIndex == 9)
+            {
+                await Navigation.PushAsync(new Shiba());
+            }
+            else if (e.SelectedItemIndex == 10)
+            {
+                await Navigation.PushAsync(new Bichon());
+            }
+            else if (e.SelectedItemIndex == 11)
+            {
+                await Navigation.PushAsync(new Border());
+            }
+            else if (e.SelectedItemIndex == 12)
+            {
+                await Navigation.PushAsync(new CHi());
+            }
+            else if (e.SelectedItemIndex == 13)
+            {
+                await Navigation.PushAsync(new CHOW());
+            }
+            else if (e.SelectedItemIndex == 14)
+            {
+                await Navigation.PushAsync(new Corgi());
+            }
+            else if (e.SelectedItemIndex == 15)
+            {
+                await Navigation.PushAsync(new Dach());
+            }
+            else if (e.SelectedItemIndex == 16)
+            {
+                await Navigation.PushAsync(new Germ());
+            }
+            else if (e.SelectedItemIndex == 17)
+            {
+                await Navigation.PushAsync(new Mal());
+            }
+            else if (e.SelectedItemIndex == 18)
+            {
+                await Navigation.PushAsync(new Sam());
+            }
+            else if (e.SelectedItemIndex == 19)
+            {
+                await Navigation.PushAsync(new Shi());
+            }
+        }
+
+        private void more_Clicked(object sender, EventArgs e)
+        {
+ 
         }
     }
    

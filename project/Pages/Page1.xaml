@@ -15,7 +15,11 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.ContextActions>
-                                
+                                <MenuItem
+                                    x:Name="more"
+                                    Text="edit"
+                                    Clicked="more_Clicked"
+                                     />
                             </ViewCell.ContextActions>
                         <ViewCell.View>
                             <StackLayout Orientation="Horizontal">

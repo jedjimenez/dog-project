@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.CHOW"
+             Title=" Chow Chow"
+             BackgroundColor="Orange"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Chow Chow"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"  
+                />
+            <Image
+                Source="cho_puppy.jpg"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="NavajoWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            17-20 inches
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="NavajoWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            45-70 pounds
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="NavajoWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            8-12 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="NavajoWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            There are many excellent-quality commercial dry and wet dog foods available. Many owners choose to feed a low-grain diet. Regularly check the Chow’s skin for any irritation or other signs of allergy, even if you have not changed the commercial diet, as dog food companies frequently change the formulas. Be aware that dog treats can also create allergy and digestive issues. Give table scraps sparingly, if at all, especially avoiding cooked bones and foods with high fat content. Learn about which human foods are safe for dogs, and which are not. Check with your vet if you have any concerns about your dog’s weight or diet.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="NavajoWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Both the rough- and smooth-coated Chows have a profuse double coat and require regular grooming. Thorough brushing at least twice per week and a monthly bath can keep the dog’s skin and coat healthy. Be sure to immediately remedy any parasite issues, such as fleas or ticks. Include eye and ear care with each grooming, and trim nails regularly. Puppy coat and the coat around the head can become badly matted if not groomed regularly. Care must be taken to remove all mats and brush or comb through the undercoat. It is preferable to use a cool air dryer to thoroughly dry the Chow after a bath.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="NavajoWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Chow Chow is an active and alert dog with moderate exercise needs. The Chow requires daily walks and moderate play with toys, with minimal rough play or high-impact exercise. Avoid exercise during hot periods of the day, as the breed does not tolerate high heat or humidity well. A moderate-paced walk four or more times a day will help to keep Chow and owner happy and healthy, and doing activities together enhances the human-canine bond.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="NavajoWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Early socialization and puppy training classes are recommended and help to ensure that the Chow grows into a well-adjusted, well-mannered companion. Patience and positive, consistent reinforcement are the keys to successful training. The Chow Chow is a very intelligent dog but can be stubborn. Harsh training methods are to be avoided in order to develop a trusting relationship. Patience, praise, and regular practice are the best tools to use with your Chow.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="NavajoWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Health issues for the Chow Chow may include eyelid entropion, hip dysplasia, elbow dysplasia, allergies, and thyroid function. These issues may be minimized by health screening, responsible breeding, and regular health care and can be diagnosed and managed with veterinary care. Extensive and detailed information on the breed’s health can be found on the website of the Chow Chow Club, Inc.
+
+Recommended Health Tests from the National Breed Club:
+
+Ophthalmologist Evaluation
+Hip Evaluation
+Elbow Evaluation
+Thyroid Evaluation
+Patella Evaluation
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -165,4 +165,34 @@
   <ItemGroup>
     <BundleResource Include="Resources\pug_puppy.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shiba_puppy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\b_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bo_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chi_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cho_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\du_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ge_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mal_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sam_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shi_puppy.jpg" />
+  </ItemGroup>
 </Project>
