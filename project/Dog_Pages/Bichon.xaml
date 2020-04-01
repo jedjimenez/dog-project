@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.Bichon"
+             Title="Bichon Frise"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Bichon Frise"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                />
+            <Image
+                Source="b_puppy.jpg"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            9.5-11.5 inches
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            12-18 pounds
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            14-15 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Bichon Frise should do well on a high-quality dog food, whether commercially manufactured or home-prepared with your veterinarian’s supervision and approval. Any diet should be appropriate to the dog’s age (puppy, adult, or senior). Some dogs are prone to getting overweight, so watch your dog’s calorie consumption and weight level. Treats can be an important aid in training, but giving too many can cause obesity. Learn about which human foods are safe for dogs, and which are not. Check with your vet if you have any concerns about your dog’s weight or diet. Clean, fresh water should be available at all times.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Bichons should be brushed at least two or three times a week, but every day is best. They need a bath and a clipping at least once a month. Owners who show their Bichons learn to do this, but most pet owners take their Bichon to the groomer every four to six weeks. The Bichon is considered to be relatively hypoallergenic, as the breed sheds very little because the shed hair is caught up in the undercoat. That shed hair has to be brushed out to prevent mats from forming. As with all breeds, the Bichon’s nails should be trimmed regularly as well.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Bichon is classified as “somewhat active,” but that’s an average. Long stretches of calm are interspersed with brief bursts of high activity, often just running through the house or around the yard. Daily play sessions, in addition to walks, are required. Another dog can be a fine exercise companion, but the Bichon will still need quality playtime with his owner. A fenced-in backyard is a good idea; Bichons are surprisingly fast, and if one makes a dash for freedom, he may be difficult to catch or to call back to you. Many Bichons enjoy participating in obedience, agility, and rally competitions.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            As with all breeds, early socialization and puppy training classes are recommended. Bichons have a reputation for being difficult to housebreak. In every other respect, however, they are very easy to train. For example, Bichons love to perform tricks and learn new ones quickly. They respond very well to training based on positive rewards, rather than harsh or negative methods. A Bichon needs to be with his family, and undesirable behaviors are likely to result if he is regularly left alone for long periods of time.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Bichons are generally healthy dogs, and a responsible breeder will screen breeding stock for health conditions such as allergies, bladder infections, luxating patella, and cataracts and other eye diseases. Bichons may experience early tooth loss or complications from gum infection if dental care and regular tooth brushing  are not a priority. To avoid ear infections, regular ear cleaning is recommended.
+
+Recommended Health Tests from the National Breed Club:
+
+Hip Evaluation
+Patella Evaluation
+Ophthalmologist Evaluation
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

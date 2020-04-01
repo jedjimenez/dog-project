@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.FrenchB"
+             Title="French Bulldog"
+             BackgroundColor="PapayaWhip"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="French Bulldog"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                />
+            <Image
+                Source="frenchpuppy.jpg"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="GhostWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="NavajoWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            11-13 inches
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="GhostWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="NavajoWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            under 28 pounds
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="GhostWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="NavajoWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            10-12 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="GhostWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="NavajoWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            A high-quality dog food appropriate to the dog’s age (puppy, adult, or senior) will have all the nutrients the breed needs. Frenchies are prone to obesity, which can damage their physical structure and puts them at higher risk for some of the breed’s health issues, so it is vital to watch their calorie intake and weight. If you choose to give your dog treats, do so in moderation. Give table scraps sparingly, if at all, especially avoiding cooked bones and foods high in fat. Learn about which human foods are safe for dogs and which are not. Check with your vet if you have any concerns about your dog’s weight or diet.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="GhostWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="NavajoWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Frenchie’s short coat sheds minimally. Weekly brushing with a medium-bristle brush, a rubber grooming mitt or tool, or a hound glove will help to remove shed hair and keep him looking his best. Brushing promotes new hair growth and distributes skin oils throughout the coat to help keep it healthy. A Frenchie’s facial folds should be kept clean and dry. The Frenchie’s nailsshould be trimmed regularly, as overly long nails can cause him pain.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="GhostWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="NavajoWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            A short walk or outdoor play session with their owner each day should provide enough exercise to keep the French Bulldog in shape. Frenchies enjoy participating in canine sports such as obedience, agility, and rally. As a flat-faced breed, however, they are prone to breathing difficulties and should never be allowed to exert themselves in hot or humid weather.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="GhostWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="NavajoWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Early socialization and puppy training classes are recommended. Exposing the puppy to a wide variety of people, places, and situations will help him develop into a well-adjusted adult. Puppy training classes serve as part of the socialization process, promote good behavior, and help the owner learn to recognize and correct bad habits. Frenchies have big personalities and can need a fair amount of training to make them civilized companions. They can be stubborn, but at heart they’re people pleasers and therefore easy to train. The proper motivation (such as food) and making a game of the process will ensure their cooperation.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="GhostWhite"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="NavajoWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Because of their front-heavy structure, Frenchies cannot swim and should never be left unattended near a tub, pool, or body of water. Like all flat-faced breeds, Frenchies are prone to breathing problems and do poorly in hot or humid weather. Flat-faced breeds are also more sensitive to anesthesia. Frenchies occasionally have eye conditions such as cherry eye, juvenile cataracts, or entropion, and skin allergies and autoimmune skin disorders also are known to occur. A responsible breeder will take advantage of available tests to screen breeding stock for conditions that can affect the breed.
+
+ 
+
+Recommended Health Tests from the National Breed Club:
+
+Hip Evaluation
+Patella Evaluation
+Ophthalmologist Evaluation
+Cardiac Exam
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

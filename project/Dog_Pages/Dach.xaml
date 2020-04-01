@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.Dach"
+             Title="Dachshund"
+             BackgroundColor="SaddleBrown"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Dachshund"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"  
+                />
+            <Image
+                Source="du_puppy.jpg"
+                MinimumHeightRequest="200"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            8-9 inches (standard), 5-6 inches (miniature)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            16-32 pounds (standard), 11 pounds and under (miniature)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            12-16 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            It is extremely important that a Dachshund not be allowed to become overweight. This is not only because of general health reasons, but also to avoid strain to the Dachshund’s long back, which can lead to slipped or ruptured (herniated) discs. Ignore the pleading eyes, and give only the recommended amount given by the manufacturer of the quality dog food of your choice. Give table scraps very sparingly, if at all, especially avoiding cooked bones and foods with high fat content. Remember that the Dachshund’s nose can get him into trouble, and always keep food well out of his reach.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Dachshunds are moderate shedders, relatively clean, and have little or no body odor. The breed’s grooming needs vary with the three coat types. Smooth-coated Dachshunds are somewhat “wash and wear,” needing little beyond a wipe with a towel or hound glove to look dapper. Longhaired Dachshunds may require more frequent brushing, depending on the thickness of the coat. The Wirehaired coat can be plucked or hand-stripped several times a year to look its best, but beyond that is easy to maintain between groomings with occasional trimming of the beard and eyebrows and brushing or combing once or twice a week. All Dachshunds should have their nails trimmed every month.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Many owners think that because they are so small, Dachshunds don’t require more exercise than just running around the house. However, they do need regular exercise not only to stay fit, but also to build strong muscles to support and protect their back. Two walks every day of moderate length should be sufficient. To avoid injury, never allow your Dachshund to run up and down stairs or jump on or off furniture. Because they are very social, Dachshunds don’t do well as outdoor dogs—they want to be with their humans.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Dachshunds are very intelligent but are also independent and often stubborn, so they can be a challenge to train. They love to give and receive affection and do best with positive, reward-based training. They are sensitive and will not react well to harsh commands or punishment. Patience and consistence are key. Dachshunds have an excellent sense of smell as well as a strong prey drive. Because they were bred to stay focused and follow a trail without distraction, if they are busy with something more interesting they may not always pay attention to you.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>Generally a healthy breed, the Dachshund can be expected to live 12 to 16 years with proper care, so long as he’s kept on a good diet and has enough exercise to maintain good muscle tone. To prevent disc damage to the Dachshund’s long back, be vigilant about keeping him from becoming overweight, and always monitor his activities to avoid back injury. Like most dogs with drop ears, Dachshunds can get ear infections if their ears aren’t kept clean.
+
+Recommended Health Test from the National Breed Club:
+
+Patella Evaluation
+Ophthalmologist Evaluation
+Cardiac Exam
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
