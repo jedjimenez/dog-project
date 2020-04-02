@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.Shi"
+             Title="Shih Tzu"
+             BackgroundColor="White"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Shih Tzu"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"  
+                />
+            <Image
+                Source="shi_puppy.jpg"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            9-10.5 inches
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            9-16 pounds
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            10-18 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Shih Tzu should do well on a high-quality dog food, whether commercially manufactured or home-prepared with your veterinarian’s supervision and approval. Any diet should be appropriate to the dog’s age (puppy, adult, or senior). Some dogs are prone to getting overweight, so watch your dog’s calorie consumption and weight level. Treats can be an important aid in training, but giving too many can cause obesity. Learn about which human foods are safe for dogs, and which are not. Check with your vet if you have any concerns about your dog’s weight or diet. Clean, fresh water should be available at all times.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            A Shih Tzu with a long coat requires daily brushing. Use a good-quality wire brush with flexible pins, and layer the hair to be sure you reach to the skin. A bath about every three or four weeks will help to keep the coat clean and at its best. Remember to comb the mustache and topknot daily, and gently clean the corner of the eyes with a damp cloth. To protect the Shih Tzu’s eyes from being irritated, the hair on the top of the head should be trimmed short or tied up into a topknot. If you don’t want to have to spend time on your dog’s coat, the Shih Tzu can look adorable when clipped into a “puppy trim” by a professional groomer. Trimming nails and cleaning ears should be part of the Shih Tzu’s grooming routine.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Shih Tzu was bred to be a house companion. As such, they require minimal exercise. Short daily walks with their owner and indoor playtime will satisfy the activity needs of this small, short-legged companion.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Training a Shih Tzu can be both an amusing and a frustrating experience. The breed tends to charm his owner into letting him have his own way, which can result in a chubby, less-than-completely-housebroken pet who is difficult to groom. Because Shih Tzu are such people dogs, training methods based on praise and rewards work best. Harsh corrections should not be used with this breed. Introduce desired new behaviors a bit at a time, be firm, and never give in while the dog is misbehaving. If he nips or jumps up on you, ignore him until he settles down, then praise him. Early socialization and puppy training classes are recommended and help to ensure that the Shih Tzu grows into a well-adjusted, well-mannered companion. When enrolling in a puppy class, be sure that the training methods used in the class are based on positive reinforcement.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Because of their heavy coats and short faces, Shih Tzu do not tolerate heat well and are not good swimmers. Most Shih Tzu are generally healthy, and responsible breeders screen their stock for health conditions such as such as hip dysplasia, patellar luxation (a slipped kneecap), eye anomalies including cataracts, progressive retinal atrophy, retinal detachment, and corneal dryness and inflammation from excessive exposure to the air because of improperly closing eyelids.
+
+Recommended Health Tests from the National Breed Club:
+
+No recommended health tests
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

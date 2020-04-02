@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.Sam"
+             Title="Samoyed"
+             BackgroundColor="White"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Samoyed"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"  
+                />
+            <Image
+                Source="sam_puppy.jpg"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            21-23.5 inches (male), 19-21 inches (female)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            45-65 pounds (male), 35-50 pounds (female)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            12-14 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Samoyed should do well on a high-quality dog food, whether commercially manufactured or home-prepared with your veterinarian’s supervision and approval. Any diet should be appropriate to the dog’s age (puppy, adult, or senior). Some dogs are prone to getting overweight, so watch your dog’s calorie consumption and weight level. Treats can be an important aid in training, but giving too many can cause obesity. Learn about which human foods are safe for dogs, and which are not. Check with your vet if you have any concerns about your dog’s weight or diet. Clean, fresh water should be available at all times.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Samoyed has a profuse double coat, with a longer outer coat of harsh hair and a soft, thick, wooly undercoat. Samoyeds shed quite a bit all the time, even more so during shedding season, which can occur once or twice a year. Daily brushing will help to remove dirt and loose hairs and keep the dog looking his best. Mats or tangles can be worked out with a slicker brush or metal comb. The nails should be trimmed every three to four weeks or as needed.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Samoyeds enjoy being with their people and participating in family activities. They need some daily exercise and enjoy play sessions with their owner in a safely fenced yard or long walks on leash. The breed has a strong urge to run away and roam, and if loose a Sammie might travel for miles, putting himself at risk.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Samoyede people lived in tents and huddled for warmth with their dogs on brutal Arctic nights. This unusual degree of dog-and-master closeness forged a tight bond between Sammies and humankind. A Sammy sentenced to solitary confinement in the backyard is a miserable—and destructive—creature. These are smart, social, mischievous dogs who demand love and attention. Sammies need a firm but loving hand in training.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="White"
+                        FontSize="45"
+                        BackgroundColor="Black"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Gray" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Samoyeds are generally healthy dogs, and responsible breeders test their stock for health conditions such as hip dysplasia and eye and cardiac disorders. The Samoyed’s teeth should be brushed often, using a toothpaste designed for dogs. Regular visits to the vet for checkups and parasite control help to ensure the dog a long, healthy life.
+
+Recommended Health Tests from the National Breed Club:
+
+Ophthalmologist Evaluation
+Hip Evaluation
+PRA Optigen DNA Test
+Cardiac Exam
+RD/OSD DNA Test
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
