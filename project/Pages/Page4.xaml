@@ -3,13 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
              mc:Ignorable="d"
              x:Class="project.Pages.Page4">
+    
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="20">
+            <xfg:GradientStep StepColor="White" StepPercentage="0"/>
+            <xfg:GradientStep StepColor="NavajoWhite" StepPercentage=".5"/>
+            <xfg:GradientStep StepColor="Navy" StepPercentage="1"/>
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Welcome to Candie"  HorizontalOptions="Center" TextColor="Black" TextDecorations="Underline" BackgroundColor="NavajoWhite"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
