@@ -42,7 +42,7 @@
             />
 
             <Button
-                Text="Shop"
+                Text="Home"
                 Grid.Row="5"
                 Grid.ColumnSpan="4"
                 BackgroundColor="NavajoWhite"
@@ -50,11 +50,17 @@
                 TextColor="Black"
                 Clicked="Button_Clicked_1"
             />
+            <Button
+                Text="Stores"
+                Grid.Row="3"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_2"
+            />
         </Grid>
 
-        
-        
-        
     </StackLayout>
 
 </ContentPage>
