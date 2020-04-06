@@ -7,9 +7,8 @@
              x:Class="project.Pages.Page2">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="displayButton" Text="get location" Clicked="displayButton_Clicked" />
+            <Label x:Name="Loc" Text="Long/Lat"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

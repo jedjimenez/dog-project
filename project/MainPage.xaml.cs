@@ -23,5 +23,10 @@ namespace project
         {
             await Navigation.PushAsync(new Page1());
         }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page2());
+        }
     }
 }
