@@ -17,9 +17,13 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Candie!" FontSize="Large" HorizontalOptions="Center" TextColor="Black" TextDecorations="Underline" BackgroundColor="NavajoWhite"/>
+            <Label Text="Welcome to Canidae!" FontSize="Large" HorizontalOptions="Center" TextColor="Black" TextDecorations="Underline"/>
             <Grid>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -33,12 +37,15 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Label Padding="5,5,5,5" Grid.Row="0" Grid.RowSpan="4" Grid.ColumnSpan="6" Text="About Us" TextColor="Black" FontAttributes="Bold" FontSize="Medium"/>
-                <Label Padding="5, 5,5, 5"  Grid.Row="1" Grid.ColumnSpan="6">
+                <Label Padding="5,5,5,5" Grid.Row="0" Grid.ColumnSpan="6" Text="About Us" TextColor="Black" FontAttributes="Bold" FontSize="Medium"/>
+                <Label Padding="5, 5,5, 5"  Grid.Row="1" Grid.RowSpan="5" Grid.ColumnSpan="6" TextColor="Black">
                     <Label.Text>
-                        Here at Candie we provide infomration about different breeds of dogs from their weight to how to take care of them. Every dog is different, and we give detailed instructions on how to care for your dog to your fullest potential.
+                        Here at Canidae we provide infomration about different breeds of dogs from their weight to how to take care of them. Every dog is different, and we give detailed instructions on how to care for your dog to your fullest potential.
+
+Create a free account to access exclusive deals on food, toys and information to help your pet life experience!                     
                     </Label.Text>
                 </Label>
+                <Button Text="Create an Account" Grid.Row="4" Grid.ColumnSpan="6" TextColor="Black" Clicked="Button_Clicked"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
