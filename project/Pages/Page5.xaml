@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Pages.Page5"
+             Appearing="ContentPage_Appearing">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+                <Label Text="Pet Insurance"
+                   TextDecorations="Underline"
+                   FontAttributes ="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="35"/>
+                <Image HorizontalOptions="Center" Source="{Binding rando}" x:Name="photo"/>
+                <Label Text="Trupanion"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="Nationwide"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="Embrace"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="HealthyPaws"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="ASPCA"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="Petplan"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="Petfirst"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="American Kennel Club - Pet Insurance"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="Figo Pet Insurance"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="24 Pet Watch"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="Hartville"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="Petpartners"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="Prudent pet"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="Pet Premium"
+                   TextColor="Black"
+                   FontSize="20"/>
+                <Label Text="Spot"
+                   TextColor="Black"
+                   FontSize="20"/>
+           
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

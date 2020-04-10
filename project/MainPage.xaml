@@ -49,6 +49,15 @@
                 TextColor="Black"
                 Clicked="Button_Clicked_1"
             />
+            <Button
+                Text="Pet Insurance"
+                Grid.Row="6"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_2"
+            />
         </Grid>
 
     </StackLayout>
