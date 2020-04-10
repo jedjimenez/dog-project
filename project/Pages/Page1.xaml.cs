@@ -84,7 +84,7 @@ namespace project.Pages
                 },
                 new information()
                 {
-                    text = "ChowChow", smallprint = "Bright and Serious-Minded", image = "chowchow.jpg"
+                    text = "Chow Chow", smallprint = "Bright and Serious-Minded", image = "chowchow.jpg"
                 },
                 new information()
                 {
@@ -113,95 +113,104 @@ namespace project.Pages
             };
             list.ItemsSource = list1;
         }
-
-        private async void list_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
-
-            if (e.SelectedItemIndex == 0)
+            if (string.IsNullOrEmpty(e.NewTextValue))
             {
-                await Navigation.PushAsync(new AmeriBull());
+                list.ItemsSource = list1;
             }
-            else if (e.SelectedItemIndex == 1)
+            else
             {
-                await Navigation.PushAsync(new AusShep());
-            }
-            else if (e.SelectedItemIndex == 2)
-            {
-                await Navigation.PushAsync(new FrenchB());
-            }
-            else if (e.SelectedItemIndex == 3)
-            {
-                await Navigation.PushAsync(new GoldR());
-            }
-            else if (e.SelectedItemIndex == 4)
-            {
-                await Navigation.PushAsync(new Husky());
-            }
-            else if (e.SelectedItemIndex == 5)
-            {
-                await Navigation.PushAsync(new Kjindo());
-            }
-            else if (e.SelectedItemIndex == 6)
-            {
-                await Navigation.PushAsync(new Pitbull());
-            }
-            else if (e.SelectedItemIndex == 7)
-            {
-                await Navigation.PushAsync(new PomDog());
-            }
-            else if (e.SelectedItemIndex == 8)
-            {
-                await Navigation.PushAsync(new PugDog());
-            }
-            else if (e.SelectedItemIndex == 9)
-            {
-                await Navigation.PushAsync(new Shiba());
-            }
-            else if (e.SelectedItemIndex == 10)
-            {
-                await Navigation.PushAsync(new Bichon());
-            }
-            else if (e.SelectedItemIndex == 11)
-            {
-                await Navigation.PushAsync(new Border());
-            }
-            else if (e.SelectedItemIndex == 12)
-            {
-                await Navigation.PushAsync(new CHi());
-            }
-            else if (e.SelectedItemIndex == 13)
-            {
-                await Navigation.PushAsync(new CHOW());
-            }
-            else if (e.SelectedItemIndex == 14)
-            {
-                await Navigation.PushAsync(new Corgi());
-            }
-            else if (e.SelectedItemIndex == 15)
-            {
-                await Navigation.PushAsync(new Dach());
-            }
-            else if (e.SelectedItemIndex == 16)
-            {
-                await Navigation.PushAsync(new Germ());
-            }
-            else if (e.SelectedItemIndex == 17)
-            {
-                await Navigation.PushAsync(new Mal());
-            }
-            else if (e.SelectedItemIndex == 18)
-            {
-                await Navigation.PushAsync(new Sam());
-            }
-            else if (e.SelectedItemIndex == 19)
-            {
-                await Navigation.PushAsync(new Shi());
+                list.ItemsSource = list1.Where(x => x.text.StartsWith(e.NewTextValue));
             }
         }
 
-        private void more_Clicked(object sender, EventArgs e)
+        void more_Clicked(object sender, EventArgs e)
         {
- 
+            var item1 = (MenuItem)sender;
+            information item = (information)item1.CommandParameter;
+
+            if (item.text == "American BullDog")
+            {
+                Navigation.PushAsync(new AmeriBull());
+            }
+            else if (item.text == "Australian Shepard")
+            {
+                Navigation.PushAsync(new AusShep());
+            }
+            else if (item.text == "French Bulldog")
+            {
+                Navigation.PushAsync(new FrenchB());
+            }
+            else if (item.text == "Golden Retriever")
+            {
+                Navigation.PushAsync(new GoldR());
+            }
+            else if (item.text == "Husky")
+            {
+                Navigation.PushAsync(new Husky());
+            }
+            else if (item.text == "Korean Jindo")
+            {
+                Navigation.PushAsync(new Kjindo());
+            }
+            else if (item.text == "Pitbull")
+            {
+                Navigation.PushAsync(new Pitbull());
+            }
+            else if (item.text == "Pomeranian")
+            {
+                Navigation.PushAsync(new PomDog());
+            }
+            else if (item.text == "Pug")
+            {
+                Navigation.PushAsync(new PugDog());
+            }
+            else if (item.text == "Shiba Inu")
+            {
+                Navigation.PushAsync(new Shiba());
+            }
+            else if (item.text == "Bichon Frise")
+            {
+                Navigation.PushAsync(new Bichon());
+            }
+            else if (item.text == "Border Collie")
+            {
+                Navigation.PushAsync(new Border());
+            }
+            else if (item.text == "Chihuahua")
+            {
+                Navigation.PushAsync(new CHi());
+            }
+            else if (item.text == "Chow Chow")
+            {
+                Navigation.PushAsync(new CHOW());
+            }
+            else if (item.text == "Corgi")
+            {
+                Navigation.PushAsync(new Corgi());
+            }
+            else if (item.text == "Dachshund")
+            {
+                Navigation.PushAsync(new Dach());
+            }
+            else if (item.text == "German Shepherd")
+            {
+                Navigation.PushAsync(new Germ());
+            }
+            else if (item.text == "Maltese")
+            {
+                Navigation.PushAsync(new Mal());
+            }
+            else if (item.text == "Samoyed")
+            {
+                Navigation.PushAsync(new Sam());
+            }
+            else if (item.text == "Shih Tzu")
+            {
+                Navigation.PushAsync(new Shi());
+            }
+
         }
     }
    

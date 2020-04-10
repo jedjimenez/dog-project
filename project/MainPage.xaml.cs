@@ -23,5 +23,7 @@ namespace project
         {
             await Navigation.PushAsync(new Page1());
         }
+        
+
     }
 }

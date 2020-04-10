@@ -18,6 +18,7 @@
                 />
             <Image
                 Source="b_puppy.jpg"
+                MinimumHeightRequest="300"
                 />
             <ScrollView>
                 <StackLayout>

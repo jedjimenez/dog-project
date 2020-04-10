@@ -8,20 +8,23 @@
              IconImageSource="paw.png"
              Title="Dogs"
              >
+    
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="list" SeparatorColor="White" BackgroundColor="Black" RowHeight="70" ItemSelected="list_ItemSelected">
+            <SearchBar TextChanged="SearchBar_TextChanged"/>
+            <ListView x:Name="list" SeparatorColor="White" BackgroundColor="Black" RowHeight="70" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.ContextActions>
                                 <MenuItem
                                     x:Name="more"
-                                    Text="edit"
+                                    Text="More"
                                     Clicked="more_Clicked"
-                                     />
+                                    CommandParameter="{Binding .}"
+                                    />
                             </ViewCell.ContextActions>
-                        <ViewCell.View>
+                             <ViewCell.View>
                             <StackLayout Orientation="Horizontal">
                                 <Image 
                                     Source="{Binding image}"
