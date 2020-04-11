@@ -9,6 +9,7 @@
              >
 
     <StackLayout>
+        <CheckBox x:Name ="check" IsChecked="False" CheckedChanged="CheckBox_CheckedChanged" Color="DarkBlue"/>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>

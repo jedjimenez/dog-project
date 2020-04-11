@@ -211,7 +211,9 @@ namespace project.Pages
                 Navigation.PushAsync(new Shi());
             }
 
+
         }
+
     }
    
 }

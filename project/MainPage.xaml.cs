@@ -1,8 +1,10 @@
-﻿using project.Pages;
+﻿using Newtonsoft.Json;
+using project.Pages;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -23,7 +25,6 @@ namespace project
         {
             await Navigation.PushAsync(new Page1());
         }
-        
 
     }
 }
