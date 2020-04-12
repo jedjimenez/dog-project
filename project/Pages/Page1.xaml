@@ -12,7 +12,7 @@
     <ContentPage.Content>
         <StackLayout>
             <SearchBar TextChanged="SearchBar_TextChanged"/>
-            <ListView x:Name="list" SeparatorColor="White" BackgroundColor="Black" RowHeight="70" >
+            <ListView x:Name="list" SeparatorColor="Black" BackgroundColor="white" RowHeight="70" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -28,18 +28,19 @@
                             <StackLayout Orientation="Horizontal">
                                 <Image 
                                     Source="{Binding image}"
-                                    MinimumHeightRequest="30"
                                     HorizontalOptions="StartAndExpand"
+                                    HeightRequest="100"
+                                    WidthRequest="100"
                                 />
                                 <Label 
                                     Text="{Binding text}"
-                                    TextColor="Goldenrod"
+                                    TextColor="Black"
                                     HorizontalOptions="StartAndExpand"  
                                     FontSize="Large"
                                 />
                                 <Label 
                                     Text="{Binding smallprint}"
-                                    TextColor="NavajoWhite"
+                                    TextColor="Black"
                                     HorizontalOptions="EndAndExpand" 
                                     FontSize="10"
                                 />

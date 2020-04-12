@@ -6,10 +6,9 @@
              mc:Ignorable="d"
              x:Class="project.MainPage"
              x:Name="first"
+             BackgroundColor="AntiqueWhite"
              >
-
     <StackLayout>
-        <CheckBox x:Name ="check" IsChecked="False" CheckedChanged="CheckBox_CheckedChanged" Color="DarkBlue"/>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -24,24 +23,46 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            <Image
+                Source="back.png"
+                />
             <Label
                 Text="Canidae"
                 Grid.Row="0"
-                Grid.ColumnSpan="4"
+                Grid.ColumnSpan="5"
                 HorizontalOptions="Center"
                 FontSize="50"
                 TextColor="Black"
                 />
-            <Button
-                Text="Dog Breeds"
-                Grid.Row="4"
-                Grid.ColumnSpan="4"
-                BackgroundColor="NavajoWhite"
-                FontSize="40"
+            <Label
+                Text="Dog"
+                Grid.Row="2"
+                Grid.Column="0"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
                 TextColor="Black"
-                Clicked="Button_Clicked"
-            />
+                FontSize="25"
+                />
+            <Label
+                Text="Breeds"
+                Grid.Row="2"
+                Grid.Column="4"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                TextColor="Black"
+                FontSize="23"
+                />
+            <ImageButton
+                x:Name="dogb"
+                Source="d_b.jpg"
+                Grid.Row="2"
+                Grid.ColumnSpan="5"
+                BackgroundColor="Transparent"
+                Clicked="ImageButton_Clicked"
+               />
+
         </Grid>
 
     </StackLayout>
