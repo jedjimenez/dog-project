@@ -1,4 +1,4 @@
-﻿namespace QuickType
+﻿namespace Rand.Model
 {
     using System;
     using System.Collections.Generic;
@@ -17,12 +17,12 @@
 
     public partial class random_pic
     {
-        public static random_pic FromJson(string json) => random_pic.DeserializeObject<random_pic>(json, QuickType.Converter.Settings);
+        public static random_pic FromJson(string json) => JsonConvert.DeserializeObject<random_pic>(json, Rand.Model.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this random_pic self) => JsonConvert.SerializeObject(self, QuickType.Converter.Settings);
+        public static string ToJson(this random_pic self) => JsonConvert.SerializeObject(self, Rand.Model.Converter.Settings);
     }
 
     internal static class Converter

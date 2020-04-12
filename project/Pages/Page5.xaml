@@ -4,66 +4,37 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="project.Pages.Page5"
-             Appearing="ContentPage_Appearing">
+             x:Class="project.Pages.Page5">
     <ContentPage.Content>
-        <ScrollView>
         <StackLayout>
-                <Label Text="Pet Insurance"
+            <Label Text="Pet Insurance"
                    TextDecorations="Underline"
                    FontAttributes ="Bold"
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
-                   FontSize="35"/>
-                <Image HorizontalOptions="Center" Source="{Binding rando}" x:Name="photo"/>
-                <Label Text="Trupanion"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="Nationwide"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="Embrace"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="HealthyPaws"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="ASPCA"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="Petplan"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="Petfirst"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="American Kennel Club - Pet Insurance"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="Figo Pet Insurance"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="24 Pet Watch"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="Hartville"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="Petpartners"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="Prudent pet"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="Pet Premium"
-                   TextColor="Black"
-                   FontSize="20"/>
-                <Label Text="Spot"
-                   TextColor="Black"
-                   FontSize="20"/>
-           
-
-            </StackLayout>
-        </ScrollView>
+                   FontSize="40"/>
+            <ScrollView>
+                <ListView x:Name="I_list"
+                      RowHeight="100"
+                      SeparatorColor="Black"                      
+                      ItemTapped="I_list_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Label Text="{Binding Name}"
+                                           TextColor = "Black"
+                                           FontSize="20"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="CenterAndExpand"
+                                           FontAttributes="Bold"/>
+                                    
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -7,46 +7,100 @@ using System.Net.Http;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using project.Models;
+//using Rand.Model;
+using System.Collections.ObjectModel;
+
 
 namespace project.Pages
 {
-  public class pics
+    public class Insurance
     {
-        public Uri GetUri { get; set; }
+        public string Name { get; set; }       //data binding insurance name from xaml 
     }
-
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page5 : ContentPage
     {
+        
+        public ObservableCollection<Insurance> ins_list { get; set; }
         public Page5()
         {
             InitializeComponent();
-
+            ret_ins();
         }
 
-     
-
-        async void ContentPage_Appearing(object sender, EventArgs e)
+        public void ret_ins()   //retrieves insurance
         {
-            HttpClient client = new HttpClient();
-
-            var uri = new Uri(string.Format("https://dog.ceo/api/breeds/image/random"));
-
-            var request = new HttpRequestMessage
+            ins_list = new ObservableCollection<Insurance>()
             {
-                Method = HttpMethod.Get,
-                RequestUri = uri
+                new Insurance()
+                {
+                    Name = "Trupanion",
+                },
+                new Insurance()
+                {
+                    Name = "Nationwide",
+                },
+                new Insurance()
+                {
+                    Name = "Embrace",
+                },
+                new Insurance()
+                {
+                    Name = "HealthyPaws",
+                },
+                new Insurance()
+                {
+                    Name = "ASPCA",
+                },
+                new Insurance()     //7
+                {
+                    Name = "Petplan",
+                },
+                new Insurance()
+                {
+                    Name = "Petfirst",
+                },
+                new Insurance()
+                {
+                    Name = "American Kennel Club - Pet Insurance",
+                },new Insurance()
+                {
+                    Name = "Figo Pet Insurance",
+                },
+                new Insurance()
+                {
+                    Name = "24 Pet Watch",
+                },
+                new Insurance()
+                {
+                    Name = "Hartville",
+                },
+                new Insurance()
+                {
+                    Name = "Petpartners ",
+                },
+                 new Insurance()
+                {
+                    Name = "Prudent Pet",
+                },
+                new Insurance()
+                {
+                    Name = "Pet Premium",
+                },
+                new Insurance()
+                {
+                    Name = "Spot",          //15th Name and last in the list 
+                },
+
             };
+            I_list.ItemsSource = ins_list;
+            
+        }
 
-            HttpResponseMessage response = await client.SendAsync(request);
-            random_picture R = null;
+        public void I_list_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var insur = e.Item as Insurance;
 
-            if (response.IsSuccessStatusCode)
-            {
-                var content = await response.Content.ReadAsStreamAsync();
-                
-
-            }
         }
     }
 }
