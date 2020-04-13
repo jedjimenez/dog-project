@@ -5871,26 +5871,23 @@ namespace project.Droid
 			// aapt resource value: 0x7F07008F
 			public const int sam_puppy = 2131165327;
 			
-			// aapt resource value: 0x7F070090
-			public const int sh = 2131165328;
+			// aapt resource value: 0x7F070091
+			public const int shiba = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int shiba = 2131165330;
+			public const int shiba_puppy = 2131165330;
+			
+			// aapt resource value: 0x7F070090
+			public const int shi_puppy = 2131165328;
 			
 			// aapt resource value: 0x7F070093
-			public const int shiba_puppy = 2131165331;
-			
-			// aapt resource value: 0x7F070091
-			public const int shi_puppy = 2131165329;
+			public const int sibhusky = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int sibhusky = 2131165332;
+			public const int tooltip_frame_dark = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int tooltip_frame_dark = 2131165333;
-			
-			// aapt resource value: 0x7F070096
-			public const int tooltip_frame_light = 2131165334;
+			public const int tooltip_frame_light = 2131165333;
 			
 			static Drawable()
 			{
