@@ -19,7 +19,7 @@ namespace project.Pages
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CreateAccount());
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }

@@ -45,7 +45,7 @@
 Create a free account to access exclusive deals on food, toys and information to help your pet life experience!                     
                     </Label.Text>
                 </Label>
-                <Button Text="Create an Account" Grid.Row="4" Grid.ColumnSpan="6" TextColor="Black" Clicked="Button_Clicked"/>
+                <Button Text="Go Back" Grid.Row="4" Grid.ColumnSpan="6" TextColor="Black" Clicked="Button_Clicked"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

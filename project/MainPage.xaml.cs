@@ -16,6 +16,7 @@ namespace project
     {
         public MainPage()
         {
+            SetValue(NavigationPage.HasNavigationBarProperty, false);
             InitializeComponent();
         }
 
