@@ -16,6 +16,7 @@ namespace project
     {
         public MainPage()
         {
+            SetValue(NavigationPage.HasNavigationBarProperty, false);
             InitializeComponent();
         }
 
@@ -28,5 +29,11 @@ namespace project
         {
             Navigation.PushAsync(new Page2());
         }
+
+        private async void Button_Clicked_4(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page4());
+        }
+
     }
 }

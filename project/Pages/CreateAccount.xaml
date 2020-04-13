@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="project.Pages.CreateAccount">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="5,5,5,5">
+            <Label Text="Canidae Membership" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="Large"/>
+            
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="NameEntry" Placeholder="Name" HorizontalOptions="FillAndExpand"></Entry>
+            </StackLayout>
+            
+            <Entry x:Name="EmailEntry" Placeholder="Email"></Entry>
+            <Entry x:Name="UserNameEntry" Placeholder="User Name"></Entry>
+            <Entry x:Name="PwsEntry" Placeholder="Password" IsPassword="True"></Entry>
+            <Entry x:Name="ConPwsEntry" Placeholder="Confrim Password" IsPassword="True"></Entry>
+            
+            <Label  Text="Date of Birth"/>
+            <DatePicker x:Name="DOB" ></DatePicker>
+            
+            <Entry x:Name="AddEntry" Placeholder="Address" ></Entry>
+            <Entry x:Name="CityEntry" Placeholder="City"></Entry>
+            <Entry x:Name="PhoneEntry" Placeholder="Phone Number"> </Entry>
+
+                
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Save Password"></Label>
+                <Switch IsToggled="False" BackgroundColor="NavajoWhite"></Switch>
+            </StackLayout>
+            <Button Text="Sign Up" Clicked="Button_Clicked"/>
+            <Button Text="Already have an account? Sign in." TextColor="Blue" BackgroundColor="Transparent" Clicked="Button_Clicked_1"></Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
