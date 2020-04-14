@@ -6,20 +6,26 @@
              mc:Ignorable="d"
              x:Class="project.Pages.Page5"
              Appearing="ContentPage_Appearing"
-             BackgroundColor="LightBlue">
+             BackgroundColor="LightBlue"
+             Title="Informational Pet Insurance Page">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="20" >
+            <StackLayout Spacing="10" >
                 <Label Text="Pet Insurance"
                        TextDecorations="Underline"
                        FontAttributes ="Bold"
                        HorizontalTextAlignment="Center"
                        TextColor="OrangeRed"
                        FontSize="40"/>
+                
                 <Image Source="" 
                        x:Name="img"
                        HeightRequest="450"
                        WidthRequest="450"/>
+                <ActivityIndicator BindingContext="{x:Reference img}" 
+                                   IsRunning="{Binding IsLoading}"
+                                   VerticalOptions="Center"/>
+                
                 <Label Text="List of Pet Insurances"
                        TextDecorations="Underline"
                        FontAttributes ="Bold"

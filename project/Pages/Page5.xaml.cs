@@ -17,9 +17,9 @@ namespace project.Pages
     public class Insurance
     {
         public string Name { get; set; }       //data binding insurance name from xaml 
-        public bool sight { get; set; }
-        public string overview { get; set; }
-        public string about { get; set; }
+        public bool sight { get; set; }         //data binding for showing information inside a custom cell
+        public string overview { get; set; }       //setting a "learn more" message inside of each cell
+        public string about { get; set; }           //this is like an "about" sentence of the company inside the cell 
                  
     }
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -36,9 +36,9 @@ namespace project.Pages
 
         public void ret_ins()   //retrieves insurance
         {
-            ins_list = new ObservableCollection<Insurance>()
+            ins_list = new ObservableCollection<Insurance>()    //list view object collection
             {
-                new Insurance()
+                new Insurance()   //trupanion information
                 {
                     Name = "Trupanion",
                     sight = false,
@@ -48,7 +48,7 @@ namespace project.Pages
                     overview = "Learn more about Trupanion by clicking the 'READ MORE' button",
                                                         
                 },
-                new Insurance()
+                new Insurance() //nationwide information
                 {
                     Name = "Nationwide",
                     sight = false,
@@ -58,7 +58,7 @@ namespace project.Pages
                    
 
         },
-                new Insurance()
+                new Insurance() //Embrace information
                 {
                     Name = "Embrace",
                     sight = false,
@@ -67,7 +67,7 @@ namespace project.Pages
                     overview = "Learn more about Embrace by clicking the 'READ MORE' button",
                     
                 },
-                new Insurance()
+                new Insurance()  //healthy paws information
                 {
                     Name = "HealthyPaws",
                     sight = false,
@@ -78,7 +78,7 @@ namespace project.Pages
                     
 
                 },
-                new Insurance()
+                new Insurance()   //ASPCA information
                 {
                     Name = "ASPCA",
                     sight = false,
@@ -90,7 +90,7 @@ namespace project.Pages
                     
 
                 },
-                new Insurance()     //7
+                new Insurance()     //Pet plan information, 7th insurance markup
                 {
                     Name = "Petplan",
                     sight = false,
@@ -99,7 +99,7 @@ namespace project.Pages
                     
 
                 },
-                new Insurance()
+                new Insurance()  //petFirst information
                 {
                     Name = "Petfirst",
                     sight = false,
@@ -108,7 +108,7 @@ namespace project.Pages
                     overview = "Learn more about Petfirst by clicking the 'READ MORE' button",
                     
                 },
-                new Insurance()
+                new Insurance()   //AKC.org information
                 {
                     Name = "American Kennel Club - Pet Insurance",
                     sight = false,
@@ -119,7 +119,7 @@ namespace project.Pages
 
 
                 },
-                new Insurance()
+                new Insurance()   //Figo pet information
                 {
                     Name = "Figo Pet Insurance",
                     sight = false,
@@ -128,7 +128,7 @@ namespace project.Pages
                   
 
                 },
-                new Insurance()
+                new Insurance()    //24 pet watch information
                 {
                     Name = "24 Pet Watch",
                     sight = false,
@@ -138,7 +138,7 @@ namespace project.Pages
                     
 
                 },
-                new Insurance()
+                new Insurance()    //hartville information
                 {
                     Name = "Hartville",
                     sight = false,
@@ -146,7 +146,7 @@ namespace project.Pages
                     overview = "Learn more about Hartville by clicking the 'READ MORE' button",
                     
                 },
-                new Insurance()
+                new Insurance()     //pet partners information
                 {
                     Name = "Petpartners",
                     sight = false,
@@ -155,7 +155,7 @@ namespace project.Pages
                     
 
                 },
-                 new Insurance()
+                 new Insurance()    //prudent pet information
                 {
                     Name = "Prudent Pet",
                     sight = false,
@@ -164,7 +164,7 @@ namespace project.Pages
                     overview = "Learn more about Prudent Pet by clicking the 'READ MORE' button",
                     
                 },
-                new Insurance()
+                new Insurance()    //pet premium information
                 {
                     Name = "Pet Premium",
                     sight = false,
@@ -175,7 +175,7 @@ namespace project.Pages
                 },
                 new Insurance()
                 {
-                    Name = "Spot",          //15th Name and last in the list 
+                    Name = "Spot",          //Spot pet insurance information, 15th slot in the list view object list
                     sight = false,
                     about = "We're committed to helping pets lead longer, healthier lives by providing health insurance with first-class service and high quality coverage.",
                     overview = "Learn more about Spot Insurance Company by clicking the 'READ MORE' button",
@@ -187,7 +187,12 @@ namespace project.Pages
             
         }
 
-
+        /*
+         * There are a couple of different ways of getting into a cell inside a list view. One of these ways is called an Item Tapped Event. Basically, the user taps the cell 
+         * and it opens. The way that I have set up my list view and expandable list view really helps because I want to show data inside of each list view but also have it so you can close 
+         * and re-open the same cell or another cell with different information.
+         * 
+         */
         public void I_list_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var info = e.Item as Insurance;            //after tapping the specific cell 'e' will receive data from that specific cell and pass it as an Insurance object
@@ -202,31 +207,39 @@ namespace project.Pages
          */
         private void DisplayHidden(Insurance info)
         {
-            if(overwritten_ins == info)
+            if(overwritten_ins == info)       //if current object in list view is the same as sent info that was tapped, then update lists with initAgain(Insurance info) function 
             {
                 info.sight = !info.sight;
                 initAgain(info);
             }
             else
             {
-                if(overwritten_ins != null)
+                if(overwritten_ins != null)   //if current object in list view does not equal null or void then close the cell and make the contents not visible, update list with initAgain
                 {
                     overwritten_ins.sight = false;
                     initAgain(overwritten_ins);
                 }
-                info.sight = true;
-                initAgain(info);
+                info.sight = true;          //display information 
+                initAgain(info);            //update information
             }
             overwritten_ins = info;
         }
 
         private void initAgain(Insurance info)
         {
-            var i = ins_list.IndexOf(info);
-            ins_list.Remove(info);
+            var i = ins_list.IndexOf(info);             //gets the index of the item in the list
+            ins_list.Remove(info);                      //removes the item, then places the updated item back in the same location before it was removed
             ins_list.Insert(i, info);
         }
 
+
+
+        /*
+         * This function activates upon entering the page, so I have attached an API that retrieves JSON data from a site that stores over 20,000 random pictures of dogs 
+         * that will update to a new picture everytime the user enters the page. If the image is taking a long time to load an activity loader will display a loading circle
+         * until the picture has loaded. This is to tell the user that there is something being loaded here and until it shows we will load this activity loader signal.
+         * 
+         */
         async void ContentPage_Appearing(object sender, EventArgs e)
         {
             HttpClient client = new HttpClient();
@@ -254,6 +267,16 @@ namespace project.Pages
 
         }
 
+        /*
+         * Upon clicking the button which is hidden until tapped to open in the ItemTapped function; our "READ MORE" button will take the user to a new page that has information about 
+         * the specific pet insurance that they opened with the expandable list view. Upon entering the new page, there will be four labels that will display information about 
+         * cost per month, coverage, deductibles and age limit.
+         * 
+         * In order to get to the specific page the user wants to get to we first need a variable that will hold our cell data. In order to do this, we setup a command parameter that passes in 
+         * data from the specific to let the user know that they are inside said cell. With the variable read now mapped to the list view object collections we can simply match the name of the
+         * insurance with the read.Name, which will check and see if the cell we entered is correct or incorrect. If the cell matches, we pass information to the specific page that we wanted to go
+         * to.
+         */
         private void Button_Clicked(object sender, EventArgs e)
         {
             var read = (Insurance)((Button)sender).CommandParameter;
