@@ -58,7 +58,25 @@
                 TextColor="Black"
                 Clicked="Button_Clicked_1"
             />
-            
+
+            <Button
+                Text="Home"
+                Grid.Row="5"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_4"
+            />
+            <Button
+                Text="Pet Insurance"
+                Grid.Row="6"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_5"
+            />
         </Grid>
 
     </StackLayout>

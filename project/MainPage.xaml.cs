@@ -35,5 +35,9 @@ namespace project
             await Navigation.PushAsync(new Page4());
         }
 
+        private void Button_Clicked_5(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page5());
+        }
     }
 }
