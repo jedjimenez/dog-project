@@ -29,7 +29,13 @@ namespace project
             Navigation.PushAsync(new Page2());
         }
 
-        private void Button_Clicked_2(object sender, EventArgs e)
+        private async void Button_Clicked_4(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page4());
+        }
+
+
+        private void Button_Clicked_5(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page5());
         }
