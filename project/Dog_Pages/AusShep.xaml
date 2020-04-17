@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.AusShep"
+             Title="Australian Shepard"
+             BackgroundColor="LightGray"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Australian Shepard"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                />
+            <Image
+                Source="AusSheppuppy.jpeg"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="DarkSlateGray"
+                        FontSize="45"
+                        BackgroundColor="Linen"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="DarkGoldenrod" TextColor="Black">
+                        <Label.Text>
+                            20-23 inches (male), 18-21 inches (female)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="DarkSlateGray"
+                        FontSize="45"
+                        BackgroundColor="Linen"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="DarkGoldenrod" TextColor="Black">
+                        <Label.Text>
+                            50-65 pounds (male), 40-55 pounds (female)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="DarkSlateGray"
+                        FontSize="45"
+                        BackgroundColor="Linen"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="DarkGoldenrod" TextColor="Black">
+                        <Label.Text>
+                            12-15 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="DarkSlateGray"
+                        FontSize="45"
+                        BackgroundColor="Linen"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="DarkGoldenrod" TextColor="Black">
+                        <Label.Text>
+                            The Australian Shepherd should do well on a high-quality dog food, whether commercially manufactured or home-prepared with your veterinarian’s supervision and approval. 
+Any diet should be appropriate to the dog’s age (puppy, adult, or senior). 
+Some dogs are prone to getting overweight, so watch your dog’s calorie consumption and weight level. 
+Treats can be an important aid in training, but giving too many can cause obesity. 
+Learn about which human foods are safe for dogs, and which are not. 
+Check with your vet if you have any concerns about your dog’s weight or diet. Clean, fresh water should be available at all times.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="DarkSlateGray"
+                        FontSize="45"
+                        BackgroundColor="Linen"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="DarkGoldenrod" TextColor="Black">
+                        <Label.Text>
+                            In general, weekly brushing sessions will keep the Australian Shepherd’s waterproof, double-layer coat looking its best. 
+During shedding season, though, more work will be required. 
+During this period an undercoat rake can be used every two or three days to remove the abundant dead hair, followed by a cleanup with the wire brush. 
+Aussies often work and/or play outdoors, so it’s not unusual for them to come in dirtier than they left. 
+But unless they’ve gotten into a particularly messy situation, they require a bath only occasionally. 
+As with all breeds, the Aussie‘s nails should be trimmed regularly.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="DarkSlateGray"
+                        FontSize="45"
+                        BackgroundColor="Linen"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="DarkGoldenrod" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            A high-energy, athletic dog, the Aussie needs a great deal of exercise on a daily basis. At minimum, he should have a large, fenced-in yard to run around in for at least an hour or two daily. Aussies bond closely with their owners and love to accompany them on long walks—or, better yet, hikes. Once an Aussie leaves puppyhood behind, and his skeletal system is fully formed, he can make a great running companion. The best course, however, is to give the Aussie a job, whether that is herding livestock, shepherding children, or competing in canine events such as obedience, herding or agility trials, or dock diving.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="DarkSlateGray"
+                        FontSize="45"
+                        BackgroundColor="Linen"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="DarkGoldenrod" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Early socialization and obedience training are both musts for the Australian Shepherd. One of the most frequent reasons Aussies end up in rescue situations is owners couldn’t (or wouldn’t) constructively channel the breed’s boundless energy through training. Aussies bond strongly to their families and so can be territorial and overprotective of their owners’ property, and they can become destructive if left without companionship for long periods too often. Fortunately, that loyalty combined with the breed’s keen intelligence and high energy makes them very easy to train.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="DarkSlateGray"
+                        FontSize="45"
+                        BackgroundColor="Linen"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="DarkGoldenrod" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Aussies are generally healthy dogs, and a responsible breeder will test breeding stock for health concerns such as hip dysplasia, epilepsy, cataracts and certain forms of cancer.  An Aussie’s ears should be checked regularly to remove foreign matter and avoid a buildup of wax, and his teeth should be brushed regularly.
+
+Recommended Health Tests from the National Breed Club:
+
+Hip Evaluation
+                            
+Elbow Evaluation
+                            
+Ophthalmologist Evaluation
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

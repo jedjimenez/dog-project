@@ -6,10 +6,26 @@
              mc:Ignorable="d"
              x:Class="project.Pages.Page3">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ListView x:Name="Dogs" IsGroupingEnabled="True" GroupDisplayBinding="{Binding Title}" ItemTapped="Dogs_ItemTapped"  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.RowSpan="2" Grid.Column="0" Grid.Row="0"  Source="{Binding img}"  Aspect="AspectFit"/>
+                            <Label Grid.Column="1" Grid.Row="0" Text="{Binding name}" TextColor="LightSalmon" FontAttributes="Bold"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding description}" TextColor="DarkSlateGray" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

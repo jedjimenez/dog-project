@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.Pitbull"
+             Title="American Pitbull Terrier"
+             BackgroundColor="DimGray"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Pit Bull"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                />
+            <Image
+                Source="pitpuppy.jpg"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            18-19 inches (male), 17-18 inches (female)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            55-70 pounds (male), 40-55 pounds (female)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            12-16 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The AmStaff should do well on a high-quality dog food, whether commercially manufactured or home-prepared with your veterinarian’s supervision and approval. Any diet should be appropriate to the dog’s age (puppy, adult, or senior). Some dogs are prone to getting overweight, so watch your dog’s calorie consumption and weight level. Treats can be an important aid in training, but giving too many can cause obesity. Learn about which human foods are safe for dogs, and which are not. Check with your vet if you have any concerns about your dog’s weight or diet. Clean, fresh water should be available at all times.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Taking care of the AmStaff’s short, stiff coat is remarkably easy. A quick once-over with a soft bristle brush every week is usually enough to remove any dirt or other foreign matter. What’s more, a good brushing distributes skin oils throughout the coat to help keep it healthy. If an Am Staff gets into something particularly messy, a bath will probably be called for. Otherwise, bathing can wait until when and if he develops a “doggy” smell. As with all breeds, the AmStaff‘s nails should be trimmed regularly, as overly long nails can be painful and cause the dog problems while walking and running.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            An athletic, energetic dog such as the American Staffordshire Terrier requires a lot of exercise. Leaving the dog out in the yard all day is not the right approach, however: Yes, he can run around, but the AmStaff is a people-oriented dog who thrives when he is made part of the family. Long play sessions with his owner develop his physical and psychological health. In addition, many AmStaffs enjoy taking part in canine sports such as obedience, agility, and dock diving. AmStaffs are even trained in search-and-rescue and excel at it.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Early socialization and puppy training classes are recommended for all breeds, but given the AmStaff’s strong will, physical strength, and exuberance, they are a necessity. The breed’s intelligence and desire to please make training a fun, easy process. Even so, certain behaviors, such as chewing and digging, may be hard to resolve. It must be noted that dog aggression can develop even in well-socialized Am Staffs; an AmStaff should never under any circumstances be left alone with other dogs.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Am Staff is a robust, healthy breed, and a responsible breeder will screen breeding stock for these health conditions such as canine hip dysplasia, cardiac disease, and skin and coat allergies. A genetic test has recently been developed for cerebellar ataxia, which causes a progressive decline in muscle coordination, first appearing between ages 3 and 5 years; now, by identifying dogs with the mutation, breeders can avoid producing it in their  bloodlines. As with all breeds, the ears should be checked regularly, and the dog’s teeth should be brushed often.
+
+Recommended Health Tests from the National Breed Club:
+
+Hip Evaluation
+Cardiac Exam
+Thyroid Evaluation
+NCL DNA Test
+Ophthalmologist Evaluation
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

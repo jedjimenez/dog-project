@@ -4,13 +4,80 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="project.MainPage">
+             x:Class="project.MainPage"
+             >
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Mohamed" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                Text="Canidae"
+                Grid.Row="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Center"
+                FontSize="50"
+                TextColor="Black"
+                />
+                <Button
+                Text="Dog Breeds"
+                Grid.Row="4"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked"
+            />
+                <Button
+                Text="Page 2"
+                Grid.Row="3"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_1"
+            />
+                <Button
+                Text="Home"
+                Grid.Row="5"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_1"
+            />
+
+                <Button
+                Text="Home"
+                Grid.Row="5"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_4"
+            />
+                <Button
+                Text="Pet Insurance"
+                Grid.Row="6"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_5"
+            />
+            </Grid>
     </StackLayout>
 
 </ContentPage>

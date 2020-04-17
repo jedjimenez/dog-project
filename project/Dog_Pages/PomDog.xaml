@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.PomDog"
+             Title="Pomeranian"
+             BackgroundColor="Tan"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Pomeranian"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                />
+            <Image
+                Source="pompuppy.jpg"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="White"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            6-7 inches
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="White"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            3-7 pounds
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="White"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            12-16 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="White"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Pomeranian should do well on a high-quality dog food, whether commercially manufactured or home-prepared with your veterinarian’s supervision and approval. Any diet should be appropriate to the dog’s age (puppy, adult, or senior). Some dogs are prone to getting overweight, so watch your dog’s calorie consumption and weight level. Treats can be an important aid in training, but giving too many can cause obesity. Learn about which human foods are safe for dogs, and which are not. Check with your vet if you have any concerns about your dog’s weight or diet. Clean, fresh water should be available at all times.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="White"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Pomeranian’s profuse double coat is one of his most distinguishing features. Frequent brushing is necessary to maintain the beautiful coat that we admire. Brush through the dog with a pin brush and a slicker brush down to the skin once a week to keep the hair from matting. Pomeranians are active dogs, so it is important that their nails are kept short. It is highly recommended that you find a groomer to do a full groom—including bath, brushing, ears, nails, and anal glands—every four to six weeks, if you are not comfortable with doing this at home. You should also pay close attention to the Pom’s teeth. It is a good idea to brush the teeth during their weekly grooming session.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="White"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            As much as Pomeranians enjoy being lapdogs and family companions, they do benefit from some exercise and enjoy the chance to run, play, and go for walks. Be sure to keep a close eye on your Pom when he or she is outside. They are notorious for escaping through small crevices or gaps in fencing, or climbing over short fencing. Small breeds like Pomeranians can be mistaken for rabbits or squirrels by large, predatory birds such as hawks and owls, so it is vital to keep a Pom under cover or stay with them at all times. When taking your Pom for a walk, be cautious of your surroundings. Other dogs who are not controlled can easily hurt your Pom.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="White"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The Pom should be trained to walk on a leash early on and taught to come when called. Housebreaking can be a challenge, so consistency and patience are key. It is important to keep your Pom from jumping on and off couches or beds, as they can injure joints or even break a bone. Poms are alert and highly intelligent, and they enjoy and can excel in canine activities like agility, rally, and obedience, or working as therapy dogs.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="MidnightBlue"
+                        FontSize="45"
+                        BackgroundColor="White"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="Wheat" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Pomeranians are generally healthy little dogs, and responsible breeders screen their stock for health conditions such as luxating patellas (kneecaps that slip out of place), hypothyroidism, collapsing tracheas, congestive heart failure, seizures, and alopecia X (black skin disease). The Orthopedic Foundation for Animals (OFA) is a registry that keeps health-screening information in a public database. Be sure to request to see copies of OFA results of the litter’s parents from the breeder when considering a puppy.
+
+Recommended Health Tests from the National Breed Club:
+
+Patella Evaluation
+Cardiac Exam
+Ophthalmologist Evaluation
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

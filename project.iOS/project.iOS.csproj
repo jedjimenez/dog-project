@@ -122,8 +122,25 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Ansuria.XFGloss">
+      <Version>1.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="NETStandard.Library">
+      <Version>2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.6.292</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.5.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
+    <PackageReference Include="Xamarin.Google.iOS.Places">
+      <Version>3.7.0.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -131,5 +148,68 @@
       <Project>{7E82F6D0-225D-429A-9649-0E3E976F35FF}</Project>
       <Name>project</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\paw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ABDpuppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AusSheppuppy.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\frenchpuppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\goldpuppies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sibhusky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kpuppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pitpuppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pompuppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pug_puppy.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shiba_puppy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\b_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bo_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chi_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cho_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\du_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ge_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mal_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sam_puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shi_puppy.jpg" />
   </ItemGroup>
 </Project>

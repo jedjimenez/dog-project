@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Dog_Pages.Germ"
+             Title="German Shepherd"
+             BackgroundColor="Black"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="German Shepherd"
+                TextColor="White"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"  
+                />
+            <Image
+                Source="ge_puppy.jpg"
+                />
+            <ScrollView>
+                <StackLayout>
+                    <Label
+                        Text="Height"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            24-26 inches (male), 22-24 inches (female)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Weight"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            65-90 pounds (male), 50-70 pounds (female)
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Life Expectancy"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            7-10 years
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Nutrition"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            A high-quality dog food appropriate for the dog’s age (puppy, adult, or senior) will have all the nutrients the breed needs. Table scraps can cause digestive upset, so only give them sparingly, if at all, especially avoiding cooked bones and foods with high fat content. Small pieces of biscuit or the dog’s kibble can be used as treats for training. If you are feeding a high-quality food, vitamin and mineral supplements should not be necessary, although adding small quantities of yogurt, cooked vegetables, or eggs to the food can be beneficial. Learn about which human foods are safe for dogs, and which are not. Check with your vet if you have any concerns about your dog’s weight or diet.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Grooming"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            The German Shepherd Dog has a medium-length, double coat consisting of a dense, harsh, and close-lying outer coat with a softer undercoat. The breed is easy to maintain, usually requiring just a quick brushing every few days or so to help remove loose hairs, but they do shed more profusely once or twice a year. During these periods, more frequent brushing will help control the amount of hair that ends up around the house and on the furniture. The German Shepherd only needs an occasional bath. It is important to trim or grind his nails every month if they are not worn down naturally, as overly long nails can cause pain and structural issues.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Exercise"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            As a very active and athletic breed, the German Shepherd requires lots of exercise for his physical and mental well-being. A dog who is not exercised enough will become frustrated and likely to develop undesirable behaviors. With a puppy, you can start with short daily walks, as well as play sessions in a safely fenced area. Remember to not let the dog off leash, as even the best-trained dog can become distracted and not follow every command. Participating in canine activities such as agility, herding, tracking, and dock diving provides excellent physical and mental exercise and is fun and rewarding for both dog and owner.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Training"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Early socialization and puppy training classes are vital, and continuing obedience training will help ensure that the pup will grow to be an adaptable and well-mannered adult. The German Shepherd is a highly intelligent companion and an extraordinary worker. Consistency and positive, reward-based training will yield excellent results. He is extremely bonded to his people, so he is happiest when he lives with his family. He should be raised in the household and exposed to the family’s activities. The German Shepherd Dog Club of America provides detailed training advice for owners on the club’s website.
+                        </Label.Text>
+                    </Label>
+                    <Label
+                        Text="Health"
+                        TextColor="Black"
+                        FontSize="45"
+                        BackgroundColor="BurlyWood"
+                        />
+                    <Label FontSize="17" FontAttributes="Bold" BackgroundColor="AntiqueWhite" TextColor="Black" HorizontalTextAlignment="Start">
+                        <Label.Text>
+                            Most German Shepherds are healthy dogs. A responsible breeder will screen breeding stock for health conditions such as degenerative myelopathy and elbow and hip dysplasia. German Shepherd Dogs can experience bloat, a sudden and life-threatening swelling of the abdomen, and owners should educate themselves about its symptoms and what to do should bloat occur.
+
+ 
+
+Recommended Health Tests from the National Breed Club:
+
+Hip Evaluation
+Elbow Evaluation
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

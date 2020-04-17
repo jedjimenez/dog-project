@@ -4,13 +4,48 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="project.Pages.Page1">
-    
+             x:Class="project.Pages.Page1"
+             IconImageSource="paw.png"
+             Title="Dogs"
+             >
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hello"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="list" SeparatorColor="White" BackgroundColor="Black" RowHeight="70" ItemSelected="list_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem
+                                    x:Name="more"
+                                    Text="edit"
+                                    Clicked="more_Clicked"
+                                     />
+                            </ViewCell.ContextActions>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image 
+                                    Source="{Binding image}"
+                                    MinimumHeightRequest="30"
+                                    HorizontalOptions="StartAndExpand"
+                                />
+                                    <Label 
+                                    Text="{Binding text}"
+                                    TextColor="Goldenrod"
+                                    HorizontalOptions="StartAndExpand"  
+                                    FontSize="Large"
+                                />
+                                    <Label 
+                                    Text="{Binding smallprint}"
+                                    TextColor="NavajoWhite"
+                                    HorizontalOptions="EndAndExpand" 
+                                    FontSize="10"
+                                />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
