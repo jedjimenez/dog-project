@@ -10,6 +10,7 @@
              >
     <StackLayout>
         <Grid>
+<<<<<<< HEAD
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
@@ -29,6 +30,23 @@
                 Source="back.png"
                 />
             <Label
+=======
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+>>>>>>> 06f0f41b2dbfea93fa1e1c3e5449886f0adfa43f
                 Text="Canidae"
                 Grid.Row="0"
                 Grid.ColumnSpan="5"
@@ -36,6 +54,7 @@
                 FontSize="50"
                 TextColor="Black"
                 />
+<<<<<<< HEAD
             <Label
                 Text="Dog"
                 Grid.Row="2"
@@ -64,7 +83,55 @@
                />
 
         </Grid>
+=======
+                <Button
+                Text="Dog Breeds"
+                Grid.Row="4"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked"
+            />
+                <Button
+                Text="Page 2"
+                Grid.Row="3"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_1"
+            />
+                <Button
+                Text="Home"
+                Grid.Row="5"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_1"
+            />
+>>>>>>> 06f0f41b2dbfea93fa1e1c3e5449886f0adfa43f
 
+                <Button
+                Text="Home"
+                Grid.Row="5"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_4"
+            />
+                <Button
+                Text="Pet Insurance"
+                Grid.Row="6"
+                Grid.ColumnSpan="4"
+                BackgroundColor="NavajoWhite"
+                FontSize="40"
+                TextColor="Black"
+                Clicked="Button_Clicked_5"
+            />
+            </Grid>
     </StackLayout>
 
 </ContentPage>

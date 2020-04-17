@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Insurance_pages.hartville"
+             BackgroundColor="LightBlue"
+             Title="Hartville">
+    <ContentPage.Content>
+        <ScrollView>
+            <Frame Padding="2" Margin="0,5,0,5" BackgroundColor="LightBlue">
+                <StackLayout>
+                    <Label BackgroundColor="White">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span FontSize="35" TextColor="LightCoral" x:Name="CostPer" FontAttributes="Bold" TextDecorations="Underline"/>
+                                <Span x:Name="space1"/>
+                                <Span FontSize="20" TextColor="Black" x:Name="costper" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label BackgroundColor="White">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span FontSize="35" TextColor="LightCoral" x:Name="Coverage" FontAttributes="Bold" TextDecorations="Underline"/>
+                                <Span x:Name="space2"/>
+                                <Span FontSize="20" TextColor="Black" x:Name="coverage" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label BackgroundColor="White">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span FontSize="35" TextColor="LightCoral" x:Name="Deductible" FontAttributes="Bold" TextDecorations="Underline"/>
+                                <Span x:Name="space3"/>
+                                <Span FontSize="20" TextColor="Black" x:Name="deductible" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label BackgroundColor="White">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span FontSize="35" TextColor="LightCoral" x:Name="Age" FontAttributes="Bold" TextDecorations="Underline"/>
+                                <Span x:Name="space4"/>
+                                <Span FontSize="20" TextColor="Black" x:Name="age" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

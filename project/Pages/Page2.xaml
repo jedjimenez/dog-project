@@ -3,13 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              mc:Ignorable="d"
              x:Class="project.Pages.Page2">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout x:Name="myStackLayout" HeightRequest="100" BackgroundColor="Teal">
+                <Entry x:Name="E1" Placeholder="Search for a place" HeightRequest="50" TextColor="White" PlaceholderColor="White"/>
+                <Button Text="Search" Clicked="displayButton_Clicked" BackgroundColor="MediumAquamarine" TextColor="White" BorderColor="Teal" BorderWidth="1"/>
+                <ListView x:Name="myListView" ItemSelected="myListView_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Label Text="{Binding locationName}" TextColor="White"/>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Text="Close" Clicked="Button_Clicked" TextColor="White" BackgroundColor="MediumAquamarine" BorderColor="Teal" BorderWidth="1"/>
+            </StackLayout>
+            <maps:Map x:Name="myMap" IsShowingUser="true" MapType="Street"/>
         </StackLayout>
+
+
     </ContentPage.Content>
 </ContentPage>

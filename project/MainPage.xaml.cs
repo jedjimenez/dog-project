@@ -18,11 +18,27 @@ namespace project
     {
         public MainPage()
         {
+            SetValue(NavigationPage.HasNavigationBarProperty, false);
             InitializeComponent();
         }
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Page1());
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page2());
+        }
+
+        private async void Button_Clicked_4(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page4());
+        }
+
+        private void Button_Clicked_5(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page5());
         }
     }
 }

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="project.Pages.Page5"
+             Appearing="ContentPage_Appearing"
+             BackgroundColor="LightBlue"
+             Title="Informational Pet Insurance Page">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" >
+                <Label Text="Pet Insurance"
+                       TextDecorations="Underline"
+                       FontAttributes ="Bold"
+                       HorizontalTextAlignment="Center"
+                       TextColor="OrangeRed"
+                       FontSize="40"/>
+                
+                <Image Source="" 
+                       x:Name="img"
+                       HeightRequest="450"
+                       WidthRequest="450"/>
+                <ActivityIndicator BindingContext="{x:Reference img}" 
+                                   IsRunning="{Binding IsLoading}"
+                                   VerticalOptions="Center"/>
+                
+                <Label Text="List of Pet Insurances"
+                       TextDecorations="Underline"
+                       FontAttributes ="Bold"
+                       HorizontalTextAlignment="Center"
+                       TextColor="OrangeRed"
+                       FontSize="35"/>
+                <Label Text="Simply click on an insurance to see what they are all about!"
+                       FontAttributes ="Italic"
+                       HorizontalTextAlignment="Center"
+                       TextColor="Black"
+                       FontSize="25"/>
+                <ListView x:Name="I_list"
+                      RowHeight="50"                                       
+                      ItemTapped="I_list_ItemTapped"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                       
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Frame Padding="2" Margin="0,5,0,5">
+                                        <StackLayout>
+                                      
+                                        <Label Text="{Binding Name}"
+                                           
+                                           TextColor = "Black"
+                                           FontSize="20"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="CenterAndExpand"
+                                           FontAttributes="Bold"/>
+                                        <Label IsVisible="{Binding sight}"
+                                               Text="{Binding about}"
+                                               HorizontalTextAlignment="Start"
+                                               FontSize="20"
+                                               TextColor="Black"/>
+                                        <Label IsVisible="{Binding sight}"
+                                               Text="{Binding overview}"
+                                               FontAttributes="Italic"
+                                               HorizontalTextAlignment="Start"
+                                               FontSize="20"/>
+                                        <Button IsVisible="{Binding sight}"
+                                                Text="Read More >"                                            
+                                                FontSize="20"
+                                                HorizontalOptions="End"
+                                                Clicked="Button_Clicked"
+                                                CommandParameter="{Binding .}"
+                                                BackgroundColor="#243198"
+                                                TextColor="White" BorderColor="#C2D0D9"/>
+                                        </StackLayout>
+                                    </Frame>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
