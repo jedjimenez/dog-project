@@ -125,6 +125,7 @@ namespace project.Pages
             }
         }
 
+  
         void more_Clicked(object sender, EventArgs e)
         {
             var item1 = (MenuItem)sender;
@@ -213,7 +214,8 @@ namespace project.Pages
 
 
         }
-
+       
+        
     }
    
 }

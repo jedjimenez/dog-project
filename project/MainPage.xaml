@@ -10,27 +10,7 @@
              >
     <StackLayout>
         <Grid>
-<<<<<<< HEAD
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Image
-                Source="back.png"
-                />
-            <Label
-=======
+
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -39,59 +19,21 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Label
->>>>>>> 06f0f41b2dbfea93fa1e1c3e5449886f0adfa43f
-                Text="Canidae"
-                Grid.Row="0"
-                Grid.ColumnSpan="5"
-                HorizontalOptions="Center"
-                FontSize="50"
-                TextColor="Black"
-                />
-<<<<<<< HEAD
-            <Label
-                Text="Dog"
-                Grid.Row="2"
-                Grid.Column="0"
-                VerticalTextAlignment="Center"
-                HorizontalTextAlignment="Center"
-                TextColor="Black"
-                FontSize="25"
-                />
-            <Label
-                Text="Breeds"
-                Grid.Row="2"
-                Grid.Column="4"
-                VerticalTextAlignment="Center"
-                HorizontalTextAlignment="Start"
-                TextColor="Black"
-                FontSize="23"
-                />
-            <ImageButton
-                x:Name="dogb"
-                Source="d_b.jpg"
-                Grid.Row="2"
-                Grid.ColumnSpan="5"
-                BackgroundColor="Transparent"
-                Clicked="ImageButton_Clicked"
-               />
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-        </Grid>
-=======
-                <Button
+            <Button
                 Text="Dog Breeds"
                 Grid.Row="4"
                 Grid.ColumnSpan="4"
                 BackgroundColor="NavajoWhite"
                 FontSize="40"
                 TextColor="Black"
-                Clicked="Button_Clicked"
+                Clicked="ImageButton_Clicked"
             />
                 <Button
                 Text="Page 2"
@@ -111,7 +53,7 @@
                 TextColor="Black"
                 Clicked="Button_Clicked_1"
             />
->>>>>>> 06f0f41b2dbfea93fa1e1c3e5449886f0adfa43f
+
 
                 <Button
                 Text="Home"
