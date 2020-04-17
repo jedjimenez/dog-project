@@ -8,7 +8,7 @@
              IconImageSource="paw.png"
              Title="Dogs"
              >
-    
+
     <ContentPage.Content>
         <StackLayout>
             <SearchBar TextChanged="SearchBar_TextChanged"/>
@@ -20,19 +20,17 @@
                                 <MenuItem
                                     x:Name="more"
                                     Text="More"
+                                    
                                     Clicked="more_Clicked"
                                     CommandParameter="{Binding .}"
                                     />
                             </ViewCell.ContextActions>
-<<<<<<< HEAD
-                             <ViewCell.View>
-                            <StackLayout Orientation="Horizontal">
-                                <Image 
-=======
+
+
                             <ViewCell.View>
                                 <StackLayout Orientation="Horizontal">
                                     <Image 
->>>>>>> 06f0f41b2dbfea93fa1e1c3e5449886f0adfa43f
+
                                     Source="{Binding image}"
                                     HorizontalOptions="StartAndExpand"
                                     HeightRequest="100"
