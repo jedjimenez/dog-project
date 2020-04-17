@@ -28,7 +28,7 @@
 
             <Button
                 Text="Dog Breeds"
-                Grid.Row="4"
+                Grid.Row="2"
                 Grid.ColumnSpan="4"
                 BackgroundColor="NavajoWhite"
                 FontSize="40"
@@ -36,7 +36,7 @@
                 Clicked="ImageButton_Clicked"
             />
             <Button
-                Text="Page 2"
+                Text="Dog Map"
                 Grid.Row="3"
                 Grid.ColumnSpan="4"
                 BackgroundColor="NavajoWhite"
@@ -46,7 +46,7 @@
             />
             <Button
                 Text="Dog Stores"
-                Grid.Row="2"
+                Grid.Row="4"
                 Grid.ColumnSpan="4"
                 BackgroundColor="NavajoWhite"
                 FontSize="40"
@@ -56,8 +56,8 @@
 
 
             <Button
-                Text="Home"
-                Grid.Row="5"
+                Text="About Us"
+                Grid.Row="6"
                 Grid.ColumnSpan="4"
                 BackgroundColor="NavajoWhite"
                 FontSize="40"
@@ -66,7 +66,7 @@
             />
             <Button
                 Text="Pet Insurance"
-                Grid.Row="6"
+                Grid.Row="5"
                 Grid.ColumnSpan="4"
                 BackgroundColor="NavajoWhite"
                 FontSize="40"
