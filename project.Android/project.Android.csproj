@@ -166,7 +166,6 @@
       <Name>project</Name>
     </ProjectReference>
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\frenchpuppy.jpg" />
   </ItemGroup>
@@ -233,7 +232,5 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\husky.jpg" />
   </ItemGroup>
-=======
->>>>>>> 06f0f41b2dbfea93fa1e1c3e5449886f0adfa43f
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
