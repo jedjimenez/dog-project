@@ -12,6 +12,7 @@ using System.Net.Http;
 using project.Models;
 using Xamarin.Forms.Maps;
 
+
 namespace project.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]

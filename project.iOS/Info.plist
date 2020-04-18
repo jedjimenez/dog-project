@@ -33,9 +33,7 @@
 	<key>CFBundleName</key>
 	<string>project</string>
 	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Can we use your location at all times?</string>
+	<string>Assets.xcassets/AppIcon.appiconset</string>>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Can we use your location when your application is being used?</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
