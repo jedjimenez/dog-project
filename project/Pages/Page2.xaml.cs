@@ -16,6 +16,7 @@ using Plugin.Geolocator.Abstractions;
 using Position = Xamarin.Forms.Maps.Position;
 using Post = Plugin.Geolocator.Abstractions.Position;
 
+
 namespace project.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]

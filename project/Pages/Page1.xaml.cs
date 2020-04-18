@@ -44,7 +44,7 @@ namespace project.Pages
                 },
                 new information()
                 {
-                    text = "Golden Retriever", smallprint = "Intelligent and Friendly", image = "gold.jpg"
+                    text = "Golden Retriever", smallprint = "Intelligent and Friendly", image = "gold.jpeg"
                 },
                 new information()
                 {

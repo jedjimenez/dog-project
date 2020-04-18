@@ -27,6 +27,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchSdkVersion>13.4</MtouchSdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -61,6 +62,9 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -139,8 +143,8 @@
       <Version>1.5.2</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
-    <PackageReference Include="Xamarin.Google.iOS.Places">
-      <Version>3.7.0.1</Version>
+    <PackageReference Include="Xamarin.Forms.Maps">
+      <Version>4.5.0.617</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -221,5 +225,110 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\husky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ambull.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ausshep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bichon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\border.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chihuahua.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chowchow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\corgi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dachshund.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\french.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\german.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gold.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\jindo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\maltese.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pitbull.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pug.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\samoyed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shiba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shihtzu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\amazon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\canidae.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chewy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\diamond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fromm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\instrinct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kahoot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\natureslogic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nulo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nutro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\orijen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\petco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\petsmart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\taste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wellness.png" />
   </ItemGroup>
 </Project>

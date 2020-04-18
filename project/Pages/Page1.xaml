@@ -8,7 +8,7 @@
              IconImageSource="paw.png"
              Title="Dogs"
              >
-    
+
     <ContentPage.Content>
         <StackLayout>
             <SearchBar TextChanged="SearchBar_TextChanged"/>
