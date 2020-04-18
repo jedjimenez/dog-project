@@ -11,6 +11,10 @@ using System.Collections.ObjectModel;
 using System.Net.Http;
 using project.Models;
 using Xamarin.Forms.Maps;
+using Plugin.Geolocator;
+using Plugin.Geolocator.Abstractions;
+using Position = Xamarin.Forms.Maps.Position;
+using Post = Plugin.Geolocator.Abstractions.Position;
 
 namespace project.Pages
 {
@@ -32,17 +36,34 @@ namespace project.Pages
 
         public async void InitMap()
         {
+            Post position = null;
+            var locator = CrossGeolocator.Current;
+            locator.DesiredAccuracy = 100;
+            position = await locator.GetLastKnownLocationAsync();
+            string lat = position.Latitude.ToString();
+            string lon = position.Longitude.ToString();
+            double l = Convert.ToDouble(lat);
+            double longit = Convert.ToDouble(lon);
+            
             var request = new GeolocationRequest(GeolocationAccuracy.Medium);
             var myLocation = await Geolocation.GetLocationAsync(request);
-            myMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(myLocation.Latitude, myLocation.Longitude), Distance.FromMiles(1)));
+           
+            myMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(l, longit), Distance.FromMiles(1)));
         }
+
         private static string PlaceAPIkey = "AIzaSyAOPcZFynkveO6OXz6y8uN4HTrjBe4qUwE";
         private async void displayButton_Clicked(object sender, EventArgs e)
         {
+            Post position = null;
+            var locator = CrossGeolocator.Current;
+            locator.DesiredAccuracy = 100;
+            position = await locator.GetLastKnownLocationAsync();
+            /*
             var locRequest = new GeolocationRequest(GeolocationAccuracy.Medium);
             var location = await Geolocation.GetLocationAsync(locRequest);
-            double lat = location.Latitude;
-            double lon = location.Longitude;
+            */
+            double lat = position.Latitude;
+            double lon = position.Longitude;
             string keyword = E1.Text;
             string link = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + lat + "," + lon + "&radius=5000&keyword=" + keyword + "&key=" + PlaceAPIkey;
             Debug.WriteLine(link);
