@@ -14,6 +14,7 @@ namespace project.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page3 : ContentPage
     {
+        public static int state = 0;
         private ObservableCollection<GroupedByStores> list { get; set; }
         public Page3()
         {
@@ -24,7 +25,7 @@ namespace project.Pages
         private void getStores()
         {
             list = new ObservableCollection<GroupedByStores>();
-
+            
             var PetStores = new GroupedByStores() { Title = "Pet Stores" };
             PetStores.Add(new DogStores() { id = 1, name = "Pet Smart", description = "where pets are family", img = "petsmart.jpg" });
             PetStores.Add(new DogStores() { id = 2, name = "Petco", description = "where the healthy pets go", img = "petco.jpg" });
@@ -110,5 +111,13 @@ namespace project.Pages
             ((ListView)sender).SelectedItem = null;
         }
 
+        private void ContentPage_Appearing(object sender, EventArgs e)
+        {
+            if(state == 0)
+            {
+                DisplayAlert("Instructions.", "Scroll and tap on any store to be taken to its website.", "Close.");
+                state = 1;
+            }
+        }
     }
 }

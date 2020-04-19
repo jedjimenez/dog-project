@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              mc:Ignorable="d"
-             x:Class="project.Pages.Page2">
+             x:Class="project.Pages.Page2"
+             Appearing="ContentPage_Appearing">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout x:Name="myStackLayout" HeightRequest="100" BackgroundColor="Teal">

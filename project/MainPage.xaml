@@ -10,9 +10,7 @@
              >
     <StackLayout>
         <Grid>
-
-<<<<<<< HEAD
-                <Grid.RowDefinitions>
+            <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -20,16 +18,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-=======
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
->>>>>>> remotes/origin/jed
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -64,10 +53,6 @@
                 TextColor="Black"
                 Clicked="Button_Clicked_2"
             />
-<<<<<<< HEAD
-
-=======
->>>>>>> remotes/origin/jed
 
 
             <Button

@@ -26,7 +26,7 @@ namespace project.Pages
     public partial class Page5 : ContentPage
     {
         private Insurance overwritten_ins;
-
+        public static int state = 0;
         public ObservableCollection<Insurance> ins_list { get; set; }
         public Page5()
         {
@@ -242,6 +242,11 @@ namespace project.Pages
          */
         async void ContentPage_Appearing(object sender, EventArgs e)
         {
+            if(state == 0)
+            {
+                DisplayAlert("Instructions.", "Scroll to view different types of pet insurance and click on any to view more info.", "Close.");
+                state = 1;
+            }
             HttpClient client = new HttpClient();
 
             var uri = new Uri(string.Format("https://dog.ceo/api/breeds/image/random"));

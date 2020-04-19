@@ -1,7 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="project.Pages.LoginPage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             x:Class="project.Pages.LoginPage"
+             Appearing="ContentPage_Appearing">
+
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="150">
+            <xfg:GradientStep StepColor="White" StepPercentage=".3"/>
+            <xfg:GradientStep StepColor="NavajoWhite" StepPercentage="1"/>
+            <xfg:GradientStep StepColor="Navy" StepPercentage="1"/>
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+
+
     <StackLayout
         Padding="5,50,5,10">
         <Label
@@ -41,7 +53,8 @@
 
             <Button
                    Text="Register Now"
-                TextColor="Black"
+                TextColor="Maroon"
+                BackgroundColor="LightSeaGreen"
                 FontAttributes="Bold"
                 FontSize="20"
                 Clicked="Button_Clicked_1"
@@ -52,7 +65,8 @@
 
             <Button
                 Text="Login Now"
-                TextColor="Black"
+                TextColor="Maroon"
+                BackgroundColor="LightSeaGreen"
                 FontAttributes="Bold"
                 FontSize="20"
                 Clicked="Button_Clicked"

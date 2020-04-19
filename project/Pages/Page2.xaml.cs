@@ -27,6 +27,7 @@ namespace project.Pages
     }
     public partial class Page2 : ContentPage
     {
+        public static int state = 0;
         public static Welcome places = null;
         public ObservableCollection<searchLocations> placesLocations { get; set; }
         public Page2()
@@ -151,6 +152,15 @@ namespace project.Pages
         private void Button_Clicked(object sender, EventArgs e)
         {
             myStackLayout.HeightRequest = 100;
+        }
+
+        private void ContentPage_Appearing(object sender, EventArgs e)
+        {
+            if (state == 0)
+            {
+                DisplayAlert("Instructions.", "Click on the box to search for a petstore. Click search after and choose a location from the dropdown to go to its location.", "Ok.");
+                state = 1;
+            }
         }
     }
 }

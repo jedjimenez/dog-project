@@ -14,6 +14,7 @@ namespace project.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class CreateAccount : ContentPage
 	{
+        public static int state = 0;
 		public CreateAccount ()
 		{
             SetValue(NavigationPage.HasNavigationBarProperty, false);
@@ -52,6 +53,15 @@ namespace project.Pages
         public async void Button_Clicked_1(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new LoginPage());
+        }
+
+        private void ContentPage_Appearing(object sender, EventArgs e)
+        {
+            if(state == 0)
+            {
+                DisplayAlert("Instructions.", "Please enter your information to register for our app.", "Close.");
+                state = 1;
+            }
         }
     }
 }

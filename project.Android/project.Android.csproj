@@ -235,8 +235,6 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\husky.jpg" />
   </ItemGroup>
-<<<<<<< HEAD
-=======
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\samoyed.jpg" />
   </ItemGroup>
@@ -315,6 +313,5 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\kahoot.jpg" />
   </ItemGroup>
->>>>>>> remotes/origin/jed
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

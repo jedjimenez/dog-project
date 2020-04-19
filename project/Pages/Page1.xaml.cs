@@ -20,6 +20,7 @@ namespace project.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page1 : ContentPage
     {
+        public static int state = 0;
         public ObservableCollection<information> list1 { get; set; } //makes an observable collection for the cells
         public Page1()
         {
@@ -214,8 +215,15 @@ namespace project.Pages
 
 
         }
-       
-        
+
+        private void ContentPage_Appearing(object sender, EventArgs e)
+        {
+            if(state == 0)
+            {
+                DisplayAlert("Instructions.", "Scroll and look for a specifc breed of dog or search for it. Hold the image and click the more button at the top for more info.", "Close.");
+                state = 1;
+            }
+        }
     }
    
 }

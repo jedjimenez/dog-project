@@ -2,17 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
              mc:Ignorable="d"
              x:Class="project.Pages.Page1"
+             Appearing="ContentPage_Appearing"
              IconImageSource="paw.png"
              Title="Dogs"
              >
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="150">
+            <xfg:GradientStep StepColor="White" StepPercentage=".3"/>
+            <xfg:GradientStep StepColor="NavajoWhite" StepPercentage="1"/>
+            <xfg:GradientStep StepColor="Navy" StepPercentage="1"/>
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+
 
     <ContentPage.Content>
         <StackLayout>
             <SearchBar TextChanged="SearchBar_TextChanged"/>
-            <ListView x:Name="list" SeparatorColor="Black" BackgroundColor="white" RowHeight="70" >
+            <ListView x:Name="list" SeparatorColor="Black" RowHeight="70" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

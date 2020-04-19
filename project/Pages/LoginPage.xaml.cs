@@ -10,6 +10,7 @@ namespace project.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class LoginPage : ContentPage
 	{
+        public static int state = 0;
 		public LoginPage ()
 		{
             SetValue(NavigationPage.HasNavigationBarProperty, false);
@@ -31,7 +32,7 @@ namespace project.Pages
 
             if (myquery != null)
             {
-                App.Current.MainPage = new NavigationPage(new MainPage());
+                App.Current.MainPage = new NavigationPage(new Page4());
             }
             else
             {
@@ -50,6 +51,13 @@ namespace project.Pages
 
         }
 
- 
+        private void ContentPage_Appearing(object sender, EventArgs e)
+        {
+            if (state == 0) 
+            {
+                DisplayAlert("Instructions.","Login or click the register button to make an account to use the app.","Ok.");
+                state = 1;
+            } 
+        }
     }
 }
