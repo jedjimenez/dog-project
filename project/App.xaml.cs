@@ -10,7 +10,7 @@ namespace project
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new LoginPage(null,null,null));
             /*var tabbedPage = new TabbedPage();
             tabbedPage.Children.Add(new NavigationPage(new Page1())); //creates a child page for tab
             tabbedPage.Children.Add(new Page2()); //creates a child page for tab

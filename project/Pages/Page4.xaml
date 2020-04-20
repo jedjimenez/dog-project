@@ -17,9 +17,12 @@
 
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Welcome " x:Name="userLabel" TextColor="Black" HorizontalTextAlignment="Center"/>
+
             <Label Text="Welcome to Canidae!" FontSize="Large" HorizontalOptions="Center" TextColor="Black" TextDecorations="Underline"/>
             <Grid>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -80,7 +83,22 @@
                     BackgroundColor="LightSeaGreen"
                 Clicked="Button_Clicked_5"
             />
-
+                <Button Text="Profile" 
+                        Clicked="Button_Clicked" 
+                        TextColor="Maroon"
+                        BackgroundColor="LightSeaGreen"
+                        Grid.Row="8"
+                        Grid.ColumnSpan="6"
+            />
+                <Button
+                Text="Log out"
+                Grid.Row="9"
+                Grid.ColumnSpan="6"
+                TextColor="Maroon"
+                    BackgroundColor="LightSeaGreen"
+                Clicked="Button_Clicked_3"
+            />
+                
 
             </Grid>
         </StackLayout>

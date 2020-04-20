@@ -11,10 +11,16 @@ namespace project.Pages
 	public partial class LoginPage : ContentPage
 	{
         public static int state = 0;
-		public LoginPage ()
+        public static string uName;
+        public static string Name;
+        public static string Email;
+        public LoginPage (string userName, string name, string email)
 		{
             SetValue(NavigationPage.HasNavigationBarProperty, false);
 			InitializeComponent ();
+            uName = userName;
+            Name = name;
+            Email = email;
 		}
 
 
@@ -29,29 +35,37 @@ namespace project.Pages
             var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
             var db = new SQLiteConnection(dbpath);
             var myquery = db.Table<RegUserTable>().Where(u => u.UserName.Equals(UserNameEntry.Text) && u.Password.Equals(PwsEntry.Text)).FirstOrDefault();
-
             if (myquery != null)
             {
-                App.Current.MainPage = new NavigationPage(new Page4());
+                App.Current.MainPage = new NavigationPage(new Page4(uName, Name, Email));
             }
             else
             {
                 Device.BeginInvokeOnMainThread(async () =>
                 {
                     await this.DisplayAlert("Error!", "Wrong username or password. Enter again.", "Close");
-                    await Navigation.PushAsync(new LoginPage());
+                    //await Navigation.PushAsync(new LoginPage());
                 });
             }
 
         }
 
-        private void ContentPage_Appearing(object sender, EventArgs e)
+        private async void ContentPage_Appearing(object sender, EventArgs e)
         {
             if (state == 0) 
             {
-                DisplayAlert("Instructions.","Login or click the register button to make an account to use the app.","Ok.");
+                var result = await DisplayAlert("Instructions.","Login or click the register button to make an account to use the app.","Ok.", "Continue as Guest");
                 state = 1;
+                if (!result)
+                {
+                    Navigation.PushAsync(new Page4("guest", "guest", "Unknown"));
+                }
             } 
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page4("guest", "guest", "Unknown"));
         }
     }
 }

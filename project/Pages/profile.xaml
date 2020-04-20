@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             mc:Ignorable="d"
+             x:Class="project.Pages.profile">
+
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="150">
+            <xfg:GradientStep StepColor="White" StepPercentage=".3"/>
+            <xfg:GradientStep StepColor="NavajoWhite" StepPercentage="1"/>
+            <xfg:GradientStep StepColor="Navy" StepPercentage="1"/>
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+    
+    <ContentPage.Content>
+
+
+
+        <StackLayout>
+            <Label x:Name="LName" Text="Name: " HeightRequest="50"/>
+            <Label x:Name="LuName" Text="Username: " HeightRequest="50"/>
+            <Label x:Name="LEmail" Text="Email: " HeightRequest="50"/>
+            <Button Text="Change your information." Clicked="Button_Clicked" TextColor="Maroon"
+                    BackgroundColor="LightSeaGreen"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

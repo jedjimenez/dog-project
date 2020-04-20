@@ -12,16 +12,17 @@ namespace project.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page4 : ContentPage
     {
-        public Page4()
+        public static string userName;
+        public static string Name;
+        public static string Email;
+        public Page4(string uName, string name, string email)
         {
             InitializeComponent();
+            userLabel.Text = "Welcome " + uName;
+            userName = uName;
+            Name = name;
+            Email = email;
         }
-
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MainPage());
-        }
-
 
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
@@ -41,6 +42,16 @@ namespace project.Pages
         private void Button_Clicked_5(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page5());
+        }
+
+        private void Button_Clicked_3(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new LoginPage(null,null,null));
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new profile(userName, Name, Email));
         }
     }
 }

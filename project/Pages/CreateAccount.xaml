@@ -20,10 +20,10 @@
             <Label Text="Canidae Membership" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="Large"/>
             
             <StackLayout Orientation="Horizontal">
-                <Entry x:Name="NameEntry" Placeholder="Name" HorizontalOptions="FillAndExpand"></Entry>
+                <Entry x:Name="NameEntry" Placeholder="Name*" HorizontalOptions="FillAndExpand"></Entry>
             </StackLayout>
             
-            <Entry x:Name="EmailEntry" Placeholder="Email"></Entry>
+            <Entry x:Name="EmailEntry" Placeholder="Email*"></Entry>
             <Entry x:Name="UserNameEntry" Placeholder="Username*"></Entry>
             <Entry x:Name="PwsEntry" Placeholder="Password*" IsPassword="True"></Entry>
             <Entry x:Name="ConPwsEntry" Placeholder="Confirm Password*" IsPassword="True"></Entry>

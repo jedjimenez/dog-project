@@ -31,12 +31,22 @@ namespace project.Pages
             {
                 DisplayAlert("Error", "The passwords do not match.", "Close");
             }
+            else if (string.IsNullOrEmpty(EmailEntry.Text))
+            {
+                DisplayAlert("Error", "Please enter an email", "Ok");
+            }
+            else if (string.IsNullOrEmpty(NameEntry.Text))
+            {
+                DisplayAlert("Error", "Please enter a name", "Ok");
+            }
             else
             {
                 var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
                 var db = new SQLiteConnection(dbpath);
                 db.CreateTable<RegUserTable>();
-
+                string name = NameEntry.Text;
+                string uName = UserNameEntry.Text;
+                string email = EmailEntry.Text;
                 var item = new RegUserTable()
                 {
                     UserName = UserNameEntry.Text,
@@ -49,14 +59,13 @@ namespace project.Pages
                 db.Insert(item);
                 Device.BeginInvokeOnMainThread(async () =>
                 {
-                /*
-                var result = await this.DisplayAlert("Congratulations!", "User registration successfull", "Yes", "Cancel");
+                
+                var result = await this.DisplayAlert("Congratulations!", "User registration successfull", "Accept", "Retry");
 
-                if (result)
-                    await Navigation.PushAsync(new LoginPage());
-                    */
-                    await this.DisplayAlert("Congratulations!", "User registration successfull", "Close");
-                    await Navigation.PushAsync(new LoginPage());
+                    if (result)
+                    {
+                        await Navigation.PushAsync(new LoginPage(uName,name, email));
+                    }
 
                 }
 
@@ -67,15 +76,19 @@ namespace project.Pages
 
         public async void Button_Clicked_1(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new LoginPage());
+            await Navigation.PushAsync(new LoginPage(null,null,null));
         }
 
-        private void ContentPage_Appearing(object sender, EventArgs e)
+        private async void ContentPage_Appearing(object sender, EventArgs e)
         {
             if(state == 0)
             {
-                DisplayAlert("Instructions.", "Please enter your information to register for our app.", "Close.");
+                var result = await DisplayAlert("Instructions.", "Please enter your information to register for our app.", "Ok", "Continue as guest");
                 state = 1;
+                if (!result)
+                {
+                    Navigation.PushAsync(new Page4("guest", "guest", "Unknown"));
+                }
             }
         }
     }
