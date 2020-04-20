@@ -1,9 +1,11 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace project.Table
 {
+    [Table(nameof(RegUserTable))]
     class RegUserTable
     {
         public Guid UserId { get; set; }

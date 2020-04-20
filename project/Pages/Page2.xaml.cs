@@ -53,7 +53,7 @@ namespace project.Pages
             myMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(l, longit), Distance.FromMiles(1)));
         }
 
-        private static string PlaceAPIkey = "AIzaSyAOPcZFynkveO6OXz6y8uN4HTrjBe4qUwE";
+        private static string PlaceAPIkey = "AIzaSyAPIW2MXoc0ciHKDCqO5ZuGLfH6G3JKJos";
         private async void displayButton_Clicked(object sender, EventArgs e)
         {
             Post position = null;
