@@ -24,9 +24,9 @@
             </StackLayout>
             
             <Entry x:Name="EmailEntry" Placeholder="Email"></Entry>
-            <Entry x:Name="UserNameEntry" Placeholder="User Name"></Entry>
-            <Entry x:Name="PwsEntry" Placeholder="Password" IsPassword="True"></Entry>
-            <Entry x:Name="ConPwsEntry" Placeholder="Confrim Password" IsPassword="True"></Entry>
+            <Entry x:Name="UserNameEntry" Placeholder="Username*"></Entry>
+            <Entry x:Name="PwsEntry" Placeholder="Password*" IsPassword="True"></Entry>
+            <Entry x:Name="ConPwsEntry" Placeholder="Confirm Password*" IsPassword="True"></Entry>
             
             <Label  Text="Date of Birth"/>
             <DatePicker x:Name="DOB" ></DatePicker>

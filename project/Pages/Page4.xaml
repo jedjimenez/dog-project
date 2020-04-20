@@ -42,8 +42,7 @@
                 <Label Padding="5, 5,5, 5"  Grid.Row="1" Grid.RowSpan="5" Grid.ColumnSpan="6" TextColor="Black">
                     <Label.Text>
                         Here at Canidae we provide infomration about different breeds of dogs from their weight to how to take care of them. Every dog is different, and we give detailed instructions on how to care for your dog to your fullest potential.
-
-Create a free account to access exclusive deals on food, toys and information to help your pet life experience!                     
+             
                     </Label.Text>
                 </Label>
                 <!-- <Button Text="Go Back" Grid.Row="4" Grid.ColumnSpan="6" TextColor="Black" Clicked="Button_Clicked"/> -->

@@ -38,14 +38,8 @@ namespace project.Pages
             {
                 Device.BeginInvokeOnMainThread(async () =>
                 {
-                    var result = await this.DisplayAlert("Error!", "Wrong username or password. Enter again.", "Yes", "Cancel");
-
-                    if (result)
-                        await Navigation.PushAsync(new LoginPage());
-                    else
-                        await Navigation.PushAsync(new LoginPage());
-
-
+                    await this.DisplayAlert("Error!", "Wrong username or password. Enter again.", "Close");
+                    await Navigation.PushAsync(new LoginPage());
                 });
             }
 

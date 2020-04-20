@@ -60,10 +60,6 @@ namespace project.Pages
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 100;
             position = await locator.GetLastKnownLocationAsync();
-            /*
-            var locRequest = new GeolocationRequest(GeolocationAccuracy.Medium);
-            var location = await Geolocation.GetLocationAsync(locRequest);
-            */
             double lat = position.Latitude;
             double lon = position.Longitude;
             string keyword = E1.Text;
@@ -91,25 +87,18 @@ namespace project.Pages
 
         public void setListView()
         {
-            var placesList = new ObservableCollection<searchLocations>() {
-
-            new searchLocations()
+            var placesList = new ObservableCollection<searchLocations>();
+            for (int i = 0; i < 4; i++)
             {
-                locationName = places.Results[0].Name
-            },
-            new searchLocations()
-            {
-                locationName = places.Results[1].Name
-                },
-            new searchLocations()
-            {
-                locationName = places.Results[2].Name
-            },
-            new searchLocations()
-            {
-                locationName = places.Results[3].Name
+                if (places.Results[i] != null)
+                {
+                    var loc = new searchLocations()
+                    {
+                        locationName = places.Results[i].Name
+                    };
+                    placesList.Add(loc);
+                }
             }
-            };
             myListView.ItemsSource = placesList;
         }
         private void myListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
