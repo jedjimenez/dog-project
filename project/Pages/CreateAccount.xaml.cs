@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using project.Table;
 using Xamarin.Forms.Xaml;
+using Android.OS;
+using System.Diagnostics;
 
 namespace project.Pages
 {
@@ -41,39 +43,55 @@ namespace project.Pages
             }
             else
             {
-                var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
+                var dbpath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
                 var db = new SQLiteConnection(dbpath);
                 db.CreateTable<RegUserTable>();
+                var user = db.Query<RegUserTable>("select * from RegUserTable");
                 string name = NameEntry.Text;
                 string uName = UserNameEntry.Text;
                 string email = EmailEntry.Text;
-                var item = new RegUserTable()
+                System.Diagnostics.Debug.WriteLine(email);
+                bool flag = true;
+                for (int i = 0; i < user.Count; i++)
                 {
-                    UserName = UserNameEntry.Text,
-                    Password = PwsEntry.Text,
-                    Email = EmailEntry.Text,
-                    PhoneNumber = PhoneEntry.Text,
-
-
-                };
-                db.Insert(item);
-                Device.BeginInvokeOnMainThread(async () =>
-                {
-                
-                var result = await this.DisplayAlert("Congratulations!", "User registration successfull", "Accept", "Retry");
-
-                    if (result)
+                    if (uName == user[i].UserName)
                     {
-                        await Navigation.PushAsync(new LoginPage(uName,name, email));
+                        DisplayAlert("Error", "The username is not available", "Ok");
+                        flag = false;
+                        break;
                     }
-
                 }
+                if (flag == true)
+                {
+                    var item = new RegUserTable()
+                    {
+                        UserName = UserNameEntry.Text,
+                        Password = PwsEntry.Text,
+                        Email = email,
+                        PhoneNumber = PhoneEntry.Text,
+                        Name = NameEntry.Text
+
+
+                    };
+                    db.Insert(item);
+                    Device.BeginInvokeOnMainThread(async () =>
+                    {
+
+                        var result = await this.DisplayAlert("Congratulations!", "User registration successfull", "Accept", "Retry");
+
+                        if (result)
+                        {
+                            await Navigation.PushAsync(new LoginPage(uName, name, email));
+                        }
+
+                    }
 
 
                 );
+
+                }
             }
         }
-
         public async void Button_Clicked_1(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new LoginPage(null,null,null));

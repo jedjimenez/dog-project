@@ -23,9 +23,16 @@
             <Label x:Name="LName" Text="Name: " HeightRequest="50"/>
             <Label x:Name="LuName" Text="Username: " HeightRequest="50"/>
             <Label x:Name="LEmail" Text="Email: " HeightRequest="50"/>
-            <Button Text="Change your information." Clicked="Button_Clicked" TextColor="Maroon"
+            <Button x:Name = "B1" Text="Change your information." Clicked="Button_Clicked" TextColor="Maroon"
                     BackgroundColor="LightSeaGreen"/>
-
+            <Button x:Name = "B2" Text="Click here to register" Clicked="Button_Clicked_1" TextColor="Maroon"
+                    BackgroundColor="LightSeaGreen"/>
+            <Entry x:Name = "E1" Text="" TextColor="Maroon" IsVisible="False"
+                    BackgroundColor="LightSeaGreen"/>
+            <Entry x:Name = "E2" Text="" TextColor="Maroon" IsVisible="False"
+                    BackgroundColor="LightSeaGreen"/>
+            <Button x:Name = "B3" Text="Save" Clicked="B2_Clicked" TextColor="Maroon"
+                    BackgroundColor="LightSeaGreen" IsVisible="False"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

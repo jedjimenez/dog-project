@@ -37,6 +37,7 @@ namespace project.Pages
             var myquery = db.Table<RegUserTable>().Where(u => u.UserName.Equals(UserNameEntry.Text) && u.Password.Equals(PwsEntry.Text)).FirstOrDefault();
             if (myquery != null)
             {
+                uName = UserNameEntry.Text;
                 App.Current.MainPage = new NavigationPage(new Page4(uName, Name, Email));
             }
             else
@@ -67,5 +68,6 @@ namespace project.Pages
         {
             Navigation.PushAsync(new Page4("guest", "guest", "Unknown"));
         }
+
     }
 }

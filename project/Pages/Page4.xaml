@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
              mc:Ignorable="d"
-             x:Class="project.Pages.Page4">
+             x:Class="project.Pages.Page4"
+             Appearing="ContentPage_Appearing">
 
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="150">
@@ -20,6 +21,7 @@
             <Label Text="Welcome " x:Name="userLabel" TextColor="Black" HorizontalTextAlignment="Center"/>
 
             <Label Text="Welcome to Canidae!" FontSize="Large" HorizontalOptions="Center" TextColor="Black" TextDecorations="Underline"/>
+
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
